@@ -1,0 +1,27 @@
+[user]
+	name = "백명석/시스템개발본부"
+	email = msbaek@ktown4u.com
+[delta]
+	navigate = true
+	side-by-side = true
+	# use n and N to move between diff sections
+	# delta detects terminal colors automatically; set one of these to disable auto-detection
+	# dark = true
+[core]
+    pager = delta
+
+[interactive]
+    diffFilter = delta --color-only
+
+[delta]
+    navigate = true    # use n and N to move between diff sections
+
+    # delta detects terminal colors automatically; set one of these to disable auto-detection
+    # dark = true
+    # light = true
+
+[merge]
+    conflictstyle = diff3
+
+[diff]
+    colorMoved = default# light = true
