@@ -139,3 +139,9 @@ vim.opt.sessionoptions = {
 
 -- My cursor was working fine, not  sure why it stopped working in wezterm, so this fixed it
 vim.opt.guicursor = "n-v-c-sm:block,i-ci-ve:ver25,r-cr-o:hor20,a:blinkwait700-blinkoff400-blinkon250-Cursor/lCursor"
+
+-- markdown-preview.nvim
+-- vim.g.mkdp_markdown_css = vim.fn.expand("~/.config/nvim/md-custom.css")
+vim.g.mkdp_markdown_css = vim.fn.expand("~/.config/nvim/markdown.css")
+vim.g.mkdp_highlight_css = vim.fn.expand("~/.config/nvim/highlight.css")
+vim.g.mkdp_theme = "none" -- 기본 테마 비활성화m

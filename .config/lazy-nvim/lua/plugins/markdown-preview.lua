@@ -24,6 +24,15 @@
 --     },
 --   },
 -- }
+-- return {
+--   "davidgranstrom/nvim-markdown-preview",
+-- }
+
 return {
-  "davidgranstrom/nvim-markdown-preview",
+  "iamcco/markdown-preview.nvim",
+  cmd = { "MarkdownPreview", "MarkdownPreviewStop" },
+  build = "cd app && yarn install",
+  init = function()
+    vim.g.mkdp_theme = "" -- 다크 테마 적용
+  end,
 }
