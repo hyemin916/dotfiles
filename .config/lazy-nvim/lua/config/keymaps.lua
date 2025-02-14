@@ -912,6 +912,19 @@ vim.keymap.set("v", "<leader>mb", function()
   end
 end, { desc = "[P]BOLD current selection" })
 
+vim.keymap.set("v", "<leader>mi", function()
+  -- Get the selected text range
+  local start_row, start_col = unpack(vim.fn.getpos("'<"), 2, 3)
+  local end_row, end_col = unpack(vim.fn.getpos("'>"), 2, 3)
+  -- Get the selected lines
+  local lines = vim.api.nvim_buf_get_lines(0, start_row - 1, end_row, false)
+  local selected_text = table.concat(lines, "\n"):sub(start_col, #lines == 1 and end_col or -1)
+  if selected_text:match("^%*.*%*$") then
+    vim.notify("Text already italic", vim.log.levels.INFO)
+  else
+    vim.cmd("normal gsa*")
+  end
+end, { desc = "[P]BOLD current selection" })
 -- -- Multiline unbold attempt
 -- -- In normal mode, bold the current word under the cursor
 -- -- If already bold, it will unbold the word under the cursor
