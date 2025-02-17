@@ -46,8 +46,8 @@ local function update_winbar()
     .. ") "
     .. "%#WinBar1#"
     .. home_replaced
-    .. "%*%=%#WinBar2#"
     .. vim.fn.systemlist("hostname")[1]
+    .. "%*%=%#WinBar2#"
 end
 -- Autocmd to update the winbar on BufEnter and WinEnter events
 vim.api.nvim_create_autocmd({ "BufEnter", "WinEnter" }, {
@@ -69,13 +69,13 @@ vim.opt.conceallevel = 2
 
 -- Keeps my cursor in the middle whenever possible
 -- This didn't work as expected, but the `stay-centered.lua` plugin did the trick
-vim.opt.scrolloff = 999
+-- vim.opt.scrolloff = 999
 
 -- When text reaches this limit, it automatically wraps to the next line.
 -- This WILL NOT auto wrap existing lines, or if you paste a long line into a
 -- file it will not wrap it as well
 -- https://www.reddit.com/r/neovim/comments/1av26kw/i_tried_to_figure_it_out_but_i_give_up_how_do_i/
-vim.opt.textwidth = 80
+vim.opt.textwidth = 120
 
 -- Above option applies the setting to ALL file types, if you want to apply it
 -- to specific files only
@@ -89,7 +89,7 @@ vim.opt.textwidth = 80
 
 -- Shows colorcolumn that helps me with markdown guidelines. This applies to ALL
 -- file types
-vim.opt.colorcolumn = "80"
+vim.opt.colorcolumn = "120"
 
 -- -- To apply it to markdown files only
 -- vim.api.nvim_create_autocmd("BufWinEnter", {
