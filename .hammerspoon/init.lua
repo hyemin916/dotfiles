@@ -19,10 +19,10 @@ function convert_to_eng_with_esc()
 end
 
 function input_eng()
-	-- local input_source = hs.keycodes.currentSourceID()
-	-- if not (input_source == inputEnglish) then
-	hs.keycodes.currentSourceID(inputEnglish)
-	-- end
+	local input_source = hs.keycodes.currentSourceID()
+	if not (input_source == inputEnglish) then
+		hs.keycodes.currentSourceID(inputEnglish)
+	end
 end
 
 -- hs.hotkey.bind({ "cmd", "shift" }, "V", function()
@@ -34,6 +34,6 @@ end
 -- 		:send()
 -- end)
 
--- hs.hotkey.bind({}, 'tab', input_eng)
+hs.hotkey.bind({}, "tab", input_eng)
 
 esc_bind = hs.hotkey.new({}, "escape", convert_to_eng_with_esc):enable()

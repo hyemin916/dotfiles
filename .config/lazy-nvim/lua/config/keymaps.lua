@@ -1872,14 +1872,20 @@ vim.keymap.set({ "n" }, "<leader>mp", "<cmd>MarkdownPreview<CR>", { desc = "prev
 vim.keymap.set("n", "gp", "`[v`]", { noremap = true, desc = "Select last pasted text" })
 vim.keymap.set("n", "<leader>v", "gv", { noremap = true, desc = "Reselect previous visual selection" })
 vim.keymap.set("i", "jk", "<ESC>")
+vim.keymap.set("i", "jj", "<ESC>")
+vim.keymap.set("n", "j", "gj")
+vim.keymap.set("n", "k", "gk")
+-- vim.keymap.set("n", "H", "^")
+-- vim.keymap.set("n", "L", "$")
 
 -- Move lines up and down
-vim.keymap.set("n", "<C-j>", ":m .+1<CR>==")
-vim.keymap.set("n", "<C-k>", ":m .-2<CR>==")
-vim.keymap.set("i", "<C-j>", "<Esc>:m .+1<CR>==gi")
-vim.keymap.set("i", "<C-k>", "<Esc>:m .-1<CR>==gi")
-vim.keymap.set("v", "<C-j>", ":m '>+1<CR>gv=gv")
-vim.keymap.set("v", "<C-k>", ":m '<-2<CR>gv=gv")
+-- vim.keymap.set("n", "<C-j>", ":m .+1<CR>==")
+-- vim.keymap.set("n", "<C-k>", ":m .-2<CR>==")
+-- vim.keymap.set("i", "<C-j>", "<Esc>:m .+1<CR>==gi")
+-- vim.keymap.set("i", "<C-k>", "<Esc>:m .-1<CR>==gi")
+-- vim.keymap.set("v", "<C-j>", ":m '>+1<CR>gv=gv")
+-- vim.keymap.set("v", "<C-k>", ":m '<-2<CR>gv=gv")
+--
 -- vim.keymap.set("n", "yy", "_", { noremap = true, desc = "Move to line start" })
 -- vim.keymap.set("n", "rr", "$", { noremap = true, desc = "Move to line end" })
 -- ObsidianLink

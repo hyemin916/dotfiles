@@ -23,10 +23,9 @@
             ]
           },
           {
-            "description": "Shift+Space를 F18로 변환",
+            "description": "Shift+Space to F18",
             "manipulators": [
               {
-                "type": "basic",
                 "from": {
                   "key_code": "spacebar",
                   "modifiers": {
@@ -38,7 +37,23 @@
                   {
                     "key_code": "f18"
                   }
-                ]
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "F19를 Command+Option으로 설정",
+            "manipulators": [
+              {
+                "from": { "key_code": "f19" },
+                "to": [
+                  {
+                    "key_code": "left_option",
+                    "modifiers": ["left_command"]
+                  }
+                ],
+                "type": "basic"
               }
             ]
           },
@@ -46,18 +61,12 @@
             "description": "오른쪽 옵션 키를 F18로 변경",
             "manipulators": [
               {
-                "type": "basic",
                 "from": {
                   "key_code": "right_option",
-                  "modifiers": {
-                    "optional": ["any"]
-                  }
+                  "modifiers": { "optional": ["any"] }
                 },
-                "to": [
-                  {
-                    "key_code": "f18"
-                  }
-                ]
+                "to": [{ "key_code": "f18" }],
+                "type": "basic"
               }
             ]
           },

@@ -25,10 +25,22 @@ nnoremap H :action RecentFiles<CR>
 nnoremap <c-e> :action ReformatCode<CR>
 inoremap <c-e> :action ReformatCode<CR>
 nnoremap <leader>e :action SelectInProjectView<CR>
-nnoremap <leader>ff :action SearchEverywhere<CR>
+" nnoremap <leader>ff :action SearchEverywhere<CR>
 nnoremap ca :action ShowIntentionActions<CR>
 nnoremap <leader>a :action $SelectAll<CR>
 
+nnoremap <leader-x> :action Console.Jdbc.Execute<CR>
+nnoremap <c-q> :action ActivateProjectToolWindow<CR>
+
+vnoremap <leader>r :action Refactorings.QuickListPopupAction<CR>
+nnoremap <leader>r :action Refactorings.QuickListPopupAction<CR>
+vnoremap <Leader>m :action ExtractMethod<CR>
+nnoremap <Leader>m :action ExtractMethod<CR>
+nnoremap <Leader>j :action ShowIntentionActions<CR>
+nnoremap <Leader>v :action IntroduceVariable<CR>
+nnoremap <Leader>f :action IntroduceField<CR>
+nnoremap <Leader>p :action IntroduceParameter<CR>
+" nnoremap <leader>f :action GotoRelated<CR>
 nnoremap <Leader>z :action RenameElement<CR>
 nnoremap <Leader>mp :action ManageRecentProjects<CR>
 nnoremap <Leader>cp :action CloseProject<CR>
@@ -50,7 +62,6 @@ nnoremap zk :action CollapseRegion<CR>
 " vnoremap J :action MoveStatementDown<CR>
 nnoremap K :action ShowHoverInfo<CR>
 
-nnoremap <c-m> :action MaximizeEditorInSplit<CR>
 nnoremap <Leader>th :action TypeHierarchy<CR>
 nnoremap se :action ShowErrorDescription<CR>
 " nnoremap qd :action QuickJavaDoc<CR>
@@ -69,7 +80,7 @@ nnoremap <c-t> :action ActivateTerminalToolWindow<CR>
 nnoremap <leader>t :action Terminal.OpenInTerminal<CR>
 """ Navigation
 nnoremap <c-\> :action MoveTabRight<CR>
-nnoremap <leader>\ :action SplitVertically<CR>
+nnoremap <leader>| :action SplitVertically<CR>
 nnoremap <leader>- :action SplitHorizontally<CR>
 nnoremap <c-=> :action Unsplit<CR>
 " nnoremap <c-m> :action MoveEditorToOppositeTabGroup<CR>
@@ -89,7 +100,6 @@ nnoremap <Leader>en :action EditSourceInNewWindow<CR>
 vnoremap < <gv
 vnoremap > >gv
 
-nnoremap <leader>r :action Refactorings.QuickListPopupAction<CR>
 nnoremap <leader>o :action OptimizeImports<CR>
 nnoremap <leader>ll :action RecentLocations<CR>
 nnoremap <leader>lh  :action LocalHistory.ShowHistory<CR>
@@ -105,9 +115,8 @@ nnoremap nD :action PreviousDiff<CR>
 " nnoremap <leader>s :write<CR>
 """ Searching and Source Code Navigation
 nnoremap <c-a> :action GotoAction<CR>
-# nnoremap <leader>ca :action GotoAction<CR>
+" nnoremap <leader>ca :action GotoAction<CR>
 nnoremap <leader>u :action FindUsages<CR>
-nnoremap <leader>f :action GotoRelated<CR>
 nnoremap <leader>h :action CallHierarchy<CR>
 nnoremap <leader>b :action ShowNavBar<CR>
 nnoremap <leader>s :action FileStructurePopup<CR>
@@ -139,7 +148,7 @@ nnoremap ,n :action ActivateDebugToolWindow<CR>
 nnoremap <c-o> :action CloseAllEditorsButActive<CR>
 
 set NERDTree
-noremap <leader>m :NERDTreeToggle<CR>
+" noremap <leader>m :NERDTreeToggle<CR>
 " noremap <leader>n :action SelectInProjectView<CR>
 let g:NERDTreeMapActivateNode='l'
 let g:NERDTreeMapJumpParent='h'
