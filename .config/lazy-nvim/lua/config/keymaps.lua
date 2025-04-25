@@ -1875,7 +1875,9 @@ vim.keymap.set("i", "jk", "<ESC>")
 vim.keymap.set("i", "jj", "<ESC>")
 vim.keymap.set("n", "j", "gj")
 vim.keymap.set("n", "k", "gk")
--- vim.keymap.set("n", "H", "^")
+-- vim.keymap.set("n", "<C-h>", "0")
+-- vim.keymap.set("n", "<C-j>", "^")
+-- vim.keymap.set("n", "<C-l>", "$")
 -- vim.keymap.set("n", "L", "$")
 
 -- Move lines up and down
