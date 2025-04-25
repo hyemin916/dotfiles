@@ -18,10 +18,10 @@ extensions:
     type: builtin
   ktown4u-db:
     args:
-    - jdbc@quarkiverse/quarkus-mcp-servers
-    - jdbc:mariadb://dev-2024-08-07-cluster.cluster-cn1xjryhj9xq.ap-northeast-2.rds.amazonaws.com:3306/hmmall
-    - -uhmmall
-    - -pgkdlfn12
+      - jdbc@quarkiverse/quarkus-mcp-servers
+      - jdbc:mariadb://hminter-r6g.cn1xjryhj9xq.ap-northeast-2.rds.amazonaws.com:3306/hmmall
+      - -uhmmall
+      - -pgkdlfn12
     cmd: jbang
     enabled: true
     envs: {}
