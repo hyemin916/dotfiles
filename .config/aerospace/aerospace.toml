@@ -168,9 +168,32 @@ alt-shift-k = ['join-with up', 'mode main']
 alt-shift-l = ['join-with right', 'mode main']
 
 ############
-#
+[[on-window-detected]]
+if.app-id = 'dev.kdrag0n.MacVirt'
+run = 'layout floating'
+
+[[on-window-detected]]
+if.app-id = 'com.jiransoft.S1ESP'
+run = 'layout floating'
+
+[[on-window-detected]]
+if.app-id = 'ai.elementlabs.lmstudio'
+run = 'layout floating'
+
+[[on-window-detected]]
+if.app-id = 'com.renfei.SnippetsLab'
+run = 'layout floating'
+
+[[on-window-detected]]
+if.app-id = 'app.msty.app'
+run = 'layout floating'
+
 [[on-window-detected]]
 if.app-id = 'com.daisydiskapp.DaisyDiskStandAlone'
+run = 'layout floating'
+
+[[on-window-detected]]
+if.app-id = 'com.microsoft.Powerpoint'
 run = 'layout floating'
 
 [[on-window-detected]]
@@ -183,6 +206,11 @@ run = 'layout floating'
 
 [[on-window-detected]]
 if.app-id = 'com.linguee.DeepLCopyTranslator'
+run = 'layout floating'
+
+
+[[on-window-detected]]
+if.app-id = 'com.apple.iWork.Numbers'
 run = 'layout floating'
 
 # [[on-window-detected]]
@@ -203,14 +231,6 @@ run = 'layout floating'
 
 [[on-window-detected]]
 if.app-id = 'com.apple.Notes'
-run = 'layout floating'
-
-[[on-window-detected]]
-if.app-id = 'com.apple.iWork.Numbers'
-run = 'layout floating'
-
-[[on-window-detected]]
-if.app-id = 'com.apple.iWork.Keynote'
 run = 'layout floating'
 
 [[on-window-detected]]
@@ -254,10 +274,6 @@ if.app-id = 'com.culturedcode.ThingsMac'
 run = "move-node-to-workspace w"
 
 [[on-window-detected]]
-if.app-id = 'com.amazonaws.acvc.osx'
-run = "move-node-to-workspace w"
-
-[[on-window-detected]]
 if.app-id = 'com.jetbrains.datagrip'
 run = "move-node-to-workspace e"
 
@@ -280,6 +296,10 @@ run = "move-node-to-workspace p"
 [[on-window-detected]]
 if.app-id = 'com.mitchellh.ghostty'
 run = "move-node-to-workspace p"
+
+[[on-window-detected]]
+if.app-id = 'com.amazonaws.acvc.osx'
+run = "move-node-to-workspace y"
 
 [[on-window-detected]]
 if.app-id = 'com.google.Chrome'
