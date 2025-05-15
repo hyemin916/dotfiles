@@ -173,6 +173,10 @@ if.app-id = 'dev.kdrag0n.MacVirt'
 run = 'layout floating'
 
 [[on-window-detected]]
+if.app-id = 'dev.zed.Zed'
+run = 'layout floating'
+
+[[on-window-detected]]
 if.app-id = 'com.jiransoft.S1ESP'
 run = 'layout floating'
 
@@ -260,7 +264,6 @@ run = "move-node-to-workspace q"
 if.app-id = 'md.obsidian'
 run = "move-node-to-workspace q"
 
-
 [[on-window-detected]]
 if.app-id = 'com.microsoft.teams2'
 run = "move-node-to-workspace w"
@@ -287,6 +290,10 @@ run = "move-node-to-workspace e"
 
 [[on-window-detected]]
 if.app-id = 'com.apple.mail'
+run = "move-node-to-workspace t"
+
+[[on-window-detected]]
+if.app-id = 'com.apple.iCal'
 run = "move-node-to-workspace t"
 
 [[on-window-detected]]
