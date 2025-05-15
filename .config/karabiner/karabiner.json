@@ -42,26 +42,6 @@
             ]
           },
           {
-            "description": "Command+Backspace to Delete (Forward Delete)",
-            "manipulators": [
-              {
-                "type": "basic",
-                "from": {
-                  "key_code": "delete_or_backspace",
-                  "modifiers": {
-                    "mandatory": ["command"],
-                    "optional": ["any"]
-                  }
-                },
-                "to": [
-                  {
-                    "key_code": "delete_forward"
-                  }
-                ]
-              }
-            ]
-          },
-          {
             "description": "Change Won (₩) to backtick (`).",
             "manipulators": [
               {
