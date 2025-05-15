@@ -200,5 +200,7 @@ export GOPATH=$HOME/go
 export PATH=$GOPATH/bin:$GOROOT/bin:$HOME/.local/bin:$PATH
 
 alias gdum='gdu -h -d 1'
+alias d2h='diff2html -s side'
+unalias gsd
 
 FUNCNEST=100
