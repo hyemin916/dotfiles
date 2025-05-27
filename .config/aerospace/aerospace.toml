@@ -111,6 +111,16 @@ alt-u = 'workspace u'
 alt-i = 'workspace i'
 alt-o = 'workspace o'
 alt-p = 'workspace p'
+alt-d = 'workspace d'
+#alt-f = 'workspace f'
+alt-g = 'workspace g'
+alt-z = 'workspace z'
+alt-x = 'workspace x'
+alt-c = 'workspace c'
+alt-v = 'workspace v'
+alt-b = 'workspace b'
+alt-n = 'workspace n'
+alt-m = 'workspace m'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
 alt-shift-q = 'move-node-to-workspace q'
@@ -123,6 +133,18 @@ alt-shift-u = 'move-node-to-workspace u'
 alt-shift-i = 'move-node-to-workspace i'
 alt-shift-o = 'move-node-to-workspace o'
 alt-shift-p = 'move-node-to-workspace p'
+# alt-shift-p = 'move-node-to-workspace a'
+# alt-shift-p = 'move-node-to-workspace s'
+alt-shift-d = 'move-node-to-workspace d'
+#alt-shift-f = 'move-node-to-workspace f'
+alt-shift-g = 'move-node-to-workspace g'
+alt-shift-z = 'move-node-to-workspace z'
+alt-shift-x = 'move-node-to-workspace x'
+alt-shift-c = 'move-node-to-workspace c'
+alt-shift-v = 'move-node-to-workspace v'
+alt-shift-b = 'move-node-to-workspace b'
+alt-shift-n = 'move-node-to-workspace n'
+alt-shift-m = 'move-node-to-workspace m'
 
 # Add keybind to fullscreen a window
 alt-shift-f = 'fullscreen'
@@ -200,10 +222,10 @@ run = 'layout floating'
 if.app-id = 'com.microsoft.Powerpoint'
 run = 'layout floating'
 
-[[on-window-detected]]
-if.app-id = 'com.anthropic.claudefordesktop'
-run = 'layout floating'
-
+# [[on-window-detected]]
+# if.app-id = 'com.anthropic.claudefordesktop'
+# run = 'layout floating'
+#
 [[on-window-detected]]
 if.app-id = 'net.xmind.vana.app'
 run = 'layout floating'

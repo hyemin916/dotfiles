@@ -50,3 +50,9 @@ https://refactoring.guru/ko/refactoring/smells/other 이 페이지을 각각의 
 쿼리를 다시 보여줘. 안 보여
 BUY 테이블의 스키마를 보여줘
 SELL, SELL_DELIY_ADDR, SELL_GOODS, SELL_DELIY_ADDR_GOODS 를 죠인해서 주문번호로 주문한 상품의 목록을 보여주는 쿼리를 작성해줘 
+arc browser로 http://localhost:8080/orderdtl?sell_no=40276007&&currentPage=1&startDate=2025-04-08&endDate=2025-05-08 이 페이지를 열고, 동일한 요청을 curl로 할 수 있도록 header를 포함해서 명령문을 만들어줘 
+arc browser로 http://localhost:8080/orderdtl?sell_no=40276007&&currentPage=1&startDate=2025-04-08&endDate=2025-05-08 이 페이지를 열고, 동일한 요청을 curl로 할 수 있도록 header를 포함해서 명령문을\n 만들어줘
+cookie도 포함시켜줘. 인증 정보가 들어있어 
+arc browser로 http://localhost:8080/orderdtl?sell_no=40276007&&currentPage=1&startDate=2025-04-08&endDate=2025-05-08 이 페이지를 열고, 동일한 요청을 curl로 할 수 있도록 header를 포함해서 명령문을\n 만들어줘
+cache 정보도 추가해줘. 인증 정보가 들어 있어 
+things app에서 keyboard 타이핑 연습하는 사이트가 기록된 메모를 찾아줘 
