@@ -37,6 +37,17 @@
                     "key_code": "left_control",
                     "modifiers": ["left_command", "left_shift", "left_option"]
                   }
+                ],
+                "conditions": [
+                  {
+                    "type": "device_if",
+                    "identifiers": [
+                      {
+                        "vendor_id": 1452,
+                        "product_id": 641
+                      }
+                    ]
+                  }
                 ]
               }
             ]
@@ -190,4 +201,3 @@
     }
   ]
 }
-
