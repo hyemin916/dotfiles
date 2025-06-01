@@ -100,10 +100,6 @@
       "command": "npx",
       "args": ["-y", "@21st-dev/magic@latest", "API_KEY=\"${MAGIC_API_KEY}\""]
     },
-    "browsermcp": {
-      "command": "npx",
-      "args": ["@browsermcp/mcp@latest"]
-    },
     "sequential-thinking": {
       "command": "npx",
       "args": ["-y", "@modelcontextprotocol/server-sequential-thinking"]
@@ -146,10 +142,6 @@
       "env": {
         "DEEPSEEK_API_KEY": "${DEEPSEEK_API_KEY}"
       }
-    },
-    "puppeteer": {
-      "command": "npx",
-      "args": ["-y", "@modelcontextprotocol/server-puppeteer"]
     },
     "playwright": {
       "command": "npx",
