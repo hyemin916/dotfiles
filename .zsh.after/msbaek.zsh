@@ -199,9 +199,9 @@ export PATH=$GOPATH/bin:$GOROOT/bin:$HOME/.local/bin:$PATH
 
 alias gdum='gdu -h -d 1'
 alias d2h='diff2html -s side'
-unalias gsd
+# unalias gsd
 
 export AWS_PROFILE=default
 export ANTHROPIC_MODEL='us.anthropic.claude-sonnet-4-20250514-v1:0'
-
+export DISABLE_PROMPT_CACHING=0
 FUNCNEST=100

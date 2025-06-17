@@ -115,6 +115,7 @@ source $ZSH/oh-my-zsh.sh
 
 source ~/.zsh.after/msbaek.zsh
 source ~/.zsh.after/ktown4u.zsh
+source ~/.zsh.after/claude_desktop_config.zsh
 
 # Q post block. Keep at the bottom of this file.export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -122,3 +123,7 @@ source ~/.zsh.after/ktown4u.zsh
 
 # Added by LM Studio CLI (lms)
 # export PATH="$PATH:/Users/msbaek/.cache/lm-studio/bin"
+
+# Add JBang to environment
+alias j!=jbang
+export PATH="$HOME/.jbang/bin:$PATH"

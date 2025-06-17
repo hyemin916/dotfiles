@@ -8,5 +8,13 @@
       "command": "npx",
       "args": ["-y", "@modelcontextprotocol/server-puppeteer"]
     },
+    "mcp-installer": {
+      "command": "npx",
+      "args": ["@anaisbetts/mcp-installer"]
+    },
+    "mcp-youtube": {
+      "command": "npx",
+      "args": ["@anaisbetts/mcp-youtube"]
+    },
   "globalShortcut": ""
 }
