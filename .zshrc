@@ -127,3 +127,10 @@ source ~/.zsh.after/claude_desktop_config.zsh
 # Add JBang to environment
 alias j!=jbang
 export PATH="$HOME/.jbang/bin:$PATH"
+
+# bun completions
+[ -s "/Users/msbaek/.bun/_bun" ] && source "/Users/msbaek/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"

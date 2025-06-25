@@ -222,10 +222,10 @@ run = 'layout floating'
 if.app-id = 'com.microsoft.Powerpoint'
 run = 'layout floating'
 
-# [[on-window-detected]]
-# if.app-id = 'com.anthropic.claudefordesktop'
-# run = 'layout floating'
-#
+[[on-window-detected]]
+if.app-id = 'com.anthropic.claudefordesktop'
+run = 'layout floating'
+
 [[on-window-detected]]
 if.app-id = 'net.xmind.vana.app'
 run = 'layout floating'
@@ -270,6 +270,11 @@ run = 'layout floating'
 [[on-window-detected]]
 if.app-id = 'QReader.MarginStudy.easy'
 run = 'layout floating'
+
+[[on-window-detected]]
+if.app-id = 'com.amazonaws.acvc.osx'
+run = 'layout floating'
+
 #
 ############
 #
@@ -279,12 +284,8 @@ if.app-id = 'company.thebrowser.Browser'
 run = "move-node-to-workspace q"         # Arc
 
 [[on-window-detected]]
-if.app-id = 'net.xmind.vana.app'
-run = "move-node-to-workspace q"
-
-[[on-window-detected]]
 if.app-id = 'md.obsidian'
-run = "move-node-to-workspace q"
+run = "move-node-to-workspace o"
 
 [[on-window-detected]]
 if.app-id = 'com.microsoft.teams2'
@@ -299,16 +300,8 @@ if.app-id = 'com.culturedcode.ThingsMac'
 run = "move-node-to-workspace w"
 
 [[on-window-detected]]
-if.app-id = 'com.jetbrains.datagrip'
-run = "move-node-to-workspace e"
-
-[[on-window-detected]]
-if.app-id = 'com.todesktop.230313mzl4w4u92'
-run = "move-node-to-workspace e"            ## cursro
-
-[[on-window-detected]]
 if.app-id = 'com.jetbrains.intellij'
-run = "move-node-to-workspace e"
+run = "move-node-to-workspace i"
 
 [[on-window-detected]]
 if.app-id = 'com.apple.mail'
@@ -319,29 +312,16 @@ if.app-id = 'com.apple.iCal'
 run = "move-node-to-workspace t"
 
 [[on-window-detected]]
-if.app-id = 'com.github.wez.wezterm'
-run = "move-node-to-workspace p"
-
-[[on-window-detected]]
 if.app-id = 'com.mitchellh.ghostty'
-run = "move-node-to-workspace p"
+run = "move-node-to-workspace e"
 
 [[on-window-detected]]
-if.app-id = 'com.amazonaws.acvc.osx'
-run = "move-node-to-workspace y"
+if.app-id = 'company.thebrowser.dia'
+run = "move-node-to-workspace o"
 
 [[on-window-detected]]
 if.app-id = 'com.google.Chrome'
 run = "move-node-to-workspace y"
-
-[[on-window-detected]]
-if.app-id = 'net.kovidgoyal.kitty'
-run = "move-node-to-workspace y"
-
-[[on-window-detected]]
-if.app-id = 'com.amazonaws.acvc.osx'
-run = "move-node-to-workspace y"
-
 # exclude_from_tiling [
 # "com.kakao.KakaoTalkMac"
 # ]
