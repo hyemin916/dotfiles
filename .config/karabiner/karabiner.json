@@ -7,10 +7,6 @@
         {
           "from": { "key_code": "caps_lock" },
           "to": [{ "key_code": "right_control" }]
-        },
-        {
-          "from": { "key_code": "right_option" },
-          "to": [{ "key_code": "f18" }]
         }
       ],
       "complex_modifications": {
@@ -55,12 +51,12 @@
             ]
           },
           {
-            "description": "Left Control to Hyper Key on Internal Keyboard",
+            "description": "Right Option to Hyper Key on Internal Keyboard",
             "manipulators": [
               {
                 "type": "basic",
                 "from": {
-                  "key_code": "left_control",
+                  "key_code": "right_option",
                   "modifiers": {
                     "optional": ["any"]
                   }
