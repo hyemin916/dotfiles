@@ -12,7 +12,8 @@
       "Bash(lua:*)",
       "Bash(brew list:*)",
       "Bash(magick:*)",
-      "Bash(pkg-config:*)"
+      "Bash(pkg-config:*)",
+      "Bash(pip3 install:*)"
     ]
   },
   "enableAllProjectMcpServers": true,
