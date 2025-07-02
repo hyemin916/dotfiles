@@ -4,19 +4,19 @@
 - If you don't have enough information to process my request, ask me the
   questions you need before processing my request
 - If the user's prompt starts with “EP:”, then the user wants to enhance the
-  prompt. Read the /Users/msbaek/.claude/Prompt Enhancer.md file and follow the
+  prompt. Read the /Users/msbaek/.claude/Prompt-Enhancer.md file and follow the
   guidelines to enhance the user's prompt. Show the user the enhancement and get
   their permission to run it before taking action on the enhanced prompt. The
   enhanced prompts will follow the language of the original prompt (e.g., Korean
   prompt input will output Korean prompt enhancements, English prompt input will
   output English prompt enhancements, etc.)
 - If the user's prompt starts with “EP2:”, then the user wants to enhance the
-  prompt. Read the ~/.claude/Prompt Enhancer2.md file and follow the guidelines
-  to enhance the user's prompt. Show the user the enhancement and get their
-  permission to run it before taking action on the enhanced prompt. The enhanced
-  prompts will follow the language of the original prompt (e.g., Korean prompt
-  input will output Korean prompt enhancements, English prompt input will output
-  English prompt enhancements, etc.)
+  prompt. Read the /Users/msbaek/.claude/Prompt-Enhancer2.md file and follow the
+  guidelines to enhance the user's prompt. Show the user the enhancement and get
+  their permission to run it before taking action on the enhanced prompt. The
+  enhanced prompts will follow the language of the original prompt (e.g., Korean
+  prompt input will output Korean prompt enhancements, English prompt input will
+  output English prompt enhancements, etc.)
 - You run in an environment where ast-grep ('sg') is available; whenever a
   search requires syntax-aware or structural matching, default to
   `sg --lang rust -p '<pattern>'` (or set `--lang` appropriately) and avoid
