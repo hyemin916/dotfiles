@@ -156,3 +156,8 @@
 	# delta detects terminal colors automatically; set one of these to disable auto-detection
 	# dark = true
 	# light = true
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f

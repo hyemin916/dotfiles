@@ -28,19 +28,6 @@
                         "description": "Right Option to Hyper Key on Internal Keyboard",
                         "manipulators": [
                             {
-                                "conditions": [
-                                    {
-                                        "identifiers": [
-                                            {
-                                                "is_built_in_keyboard": true,
-                                                "is_keyboard": true,
-                                                "product_id": 835,
-                                                "vendor_id": 1452
-                                            }
-                                        ],
-                                        "type": "device_if"
-                                    }
-                                ],
                                 "from": {
                                     "key_code": "right_option",
                                     "modifiers": { "optional": ["any"] }

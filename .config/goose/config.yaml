@@ -20,8 +20,8 @@ extensions:
     args:
       - jdbc@quarkiverse/quarkus-mcp-servers
       - jdbc:mariadb://hminter-r6g.cn1xjryhj9xq.ap-northeast-2.rds.amazonaws.com:3306/hmmall
-      - -uhmmall
-      - -pgkdlfn12
+      - -ubedrock
+      - -pZ6>Z87G@a+7.
     cmd: jbang
     enabled: true
     envs: {}

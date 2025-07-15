@@ -134,3 +134,7 @@ export PATH="$HOME/.jbang/bin:$PATH"
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+
+source /Users/msbaek/.config/broot/launcher/bash/br
+
+[[ "$TERM_PROGRAM" == "kiro" ]] && . "$(kiro --locate-shell-integration-path zsh)"
