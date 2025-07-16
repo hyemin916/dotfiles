@@ -13,9 +13,12 @@
       "Bash(brew list:*)",
       "Bash(magick:*)",
       "Bash(pkg-config:*)",
-      "Bash(pip3 install:*)"
-    ]
+      "Bash(pip3 install:*)",
+      "Bash(claude auth logout)",
+      "WebFetch(domain:docs.anthropic.com)"
+    ],
+    "deny": []
   },
-  "enableAllProjectMcpServers": true,
-  "enablePromptCaching": true
+  "enableAllProjectMcpServers": true
 }
+
