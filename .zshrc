@@ -138,3 +138,7 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 source /Users/msbaek/.config/broot/launcher/bash/br
 
 [[ "$TERM_PROGRAM" == "kiro" ]] && . "$(kiro --locate-shell-integration-path zsh)"
+
+# Task Master aliases added on 2025. 7. 17.
+alias tm='task-master'
+alias taskmaster='task-master'
