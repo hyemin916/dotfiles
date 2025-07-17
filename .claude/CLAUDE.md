@@ -22,3 +22,10 @@
   `sg --lang rust -p '<pattern>'` (or set `--lang` appropriately) and avoid
   falling back to text-only tools like `rg` or `grep` unless I explicitly
   request a plain-text search.
+
+## LEARNING
+
+During doing a task, recognize what information would help you do the task
+better and faster next time. For example where is what in the project and save
+them to ai-learnings.md file in the project. Use that file to do things better
+and faster
