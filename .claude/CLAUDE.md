@@ -3,6 +3,8 @@
 - please answer in Korean
 - If you don't have enough information to process my request, ask me the
   questions you need before processing my request
+  - Ask me if you have any questions for clarification, and continue to do what
+    I request.
 - If the user's prompt starts with “EP:”, then the user wants to enhance the
   prompt. Read the /Users/msbaek/.claude/Prompt-Enhancer.md file and follow the
   guidelines to enhance the user's prompt. Show the user the enhancement and get

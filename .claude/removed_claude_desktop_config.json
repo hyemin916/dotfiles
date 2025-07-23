@@ -16,5 +16,9 @@
       "command": "npx",
       "args": ["@anaisbetts/mcp-youtube"]
     },
+    "playwright": {
+      "command": "npx",
+      "args": ["@playwright/mcp@latest"]
+    },
   "globalShortcut": ""
 }
