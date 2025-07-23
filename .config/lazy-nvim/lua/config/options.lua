@@ -46,8 +46,8 @@ local function update_winbar()
     .. ") "
     .. "%#WinBar1#"
     .. home_replaced
-    .. vim.fn.systemlist("hostname")[1]
     .. "%*%=%#WinBar2#"
+    .. vim.fn.systemlist("hostname")[1]
 end
 -- Autocmd to update the winbar on BufEnter and WinEnter events
 vim.api.nvim_create_autocmd({ "BufEnter", "WinEnter" }, {
@@ -75,7 +75,7 @@ vim.opt.conceallevel = 2
 -- This WILL NOT auto wrap existing lines, or if you paste a long line into a
 -- file it will not wrap it as well
 -- https://www.reddit.com/r/neovim/comments/1av26kw/i_tried_to_figure_it_out_but_i_give_up_how_do_i/
-vim.opt.textwidth = 120
+vim.opt.textwidth = 80
 
 -- Above option applies the setting to ALL file types, if you want to apply it
 -- to specific files only
@@ -89,7 +89,7 @@ vim.opt.textwidth = 120
 
 -- Shows colorcolumn that helps me with markdown guidelines. This applies to ALL
 -- file types
-vim.opt.colorcolumn = "120"
+vim.opt.colorcolumn = "80"
 
 -- -- To apply it to markdown files only
 -- vim.api.nvim_create_autocmd("BufWinEnter", {
@@ -135,6 +135,7 @@ vim.opt.sessionoptions = {
 -- set it to both
 -- vim.opt.spelllang = { "en" }
 -- vim.opt.spelllang = { "en,ko" }
+-- vim.opt.spell = true
 vim.opt.spell = false
 
 -- My cursor was working fine, not  sure why it stopped working in wezterm, so this fixed it
