@@ -205,3 +205,7 @@ export AWS_PROFILE=default
 # export ANTHROPIC_MODEL='us.anthropic.claude-sonnet-4-20250514-v1:0'
 # export DISABLE_PROMPT_CACHING=0
 FUNCNEST=100
+
+# Add to ~/.zshrc or ~/.bashrc
+alias cl='claude'
+alias cld='claude --dangerously-skip-permissions'
