@@ -19,6 +19,11 @@
     ],
     "deny": []
   },
-  "enableAllProjectMcpServers": true
+  "enableAllProjectMcpServers": true,
+  "hooks": {
+    "toolCall": {
+      "before": ["/Users/msbaek/.claude/claude-watch-hook.sh"]
+    }
+  }
 }
 

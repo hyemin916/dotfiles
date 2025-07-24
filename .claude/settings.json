@@ -1,11 +1,42 @@
 {
   "env": {},
   "permissions": {
-    "allow": [
-      "Bash(npm run lint)",
-      "Bash(npm run test:*)"
-    ],
+    "allow": ["Bash(npm run lint)", "Bash(npm run test:*)"],
     "deny": []
   },
-  "model": "opus"
+  "model": "opus",
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/Users/msbaek/.claude/hooks/watch-notify.sh"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/Users/msbaek/.claude/hooks/watch-notify.sh"
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/Users/msbaek/.claude/hooks/watch-notify.sh"
+          }
+        ]
+      }
+    ]
+  }
 }
+
