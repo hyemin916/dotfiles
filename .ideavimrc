@@ -116,7 +116,6 @@ nnoremap nD :action PreviousDiff<CR>
 """ Searching and Source Code Navigation
 nnoremap <c-a> :action GotoAction<CR>
 " nnoremap <leader>ca :action GotoAction<CR>
-nnoremap <leader>u :action FindUsages<CR>
 nnoremap <leader>h :action CallHierarchy<CR>
 nnoremap <leader>b :action ShowNavBar<CR>
 nnoremap <leader>s :action FileStructurePopup<CR>
@@ -124,6 +123,8 @@ nnoremap gc :action GotoClass<CR>
 nnoremap gl :action GotoFile<CR>
 nnoremap gi :action GotoImplementation<CR>
 nnoremap qd :action GotoDeclaration<CR>
+" nnoremap <leader>u :action FindUsages<CR>
+nnoremap gu :action FindUsages<CR>
 nnoremap gp :action GotToSuperMethod<CR>
 nnoremap gt :action GotoTest<CR>
 nnoremap gb :action Back<CR>

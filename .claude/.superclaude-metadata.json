@@ -8,13 +8,25 @@
     "commands": {
       "category": "commands",
       "files_count": 17,
-      "installed_at": "2025-07-24T21:50:43.636987",
+      "installed_at": "2025-07-25T13:46:02.512380",
       "version": "3.0.0"
     },
     "core": {
       "category": "core",
       "files_count": 9,
-      "installed_at": "2025-07-24T21:50:43.587401",
+      "installed_at": "2025-07-25T13:45:43.068009",
+      "version": "3.0.0"
+    },
+    "hooks": {
+      "files_count": 0,
+      "installed": true,
+      "status": "placeholder",
+      "version": "3.0.0"
+    },
+    "mcp": {
+      "category": "integration",
+      "installed_at": "2025-07-25T08:54:56.543932",
+      "servers_count": 4,
       "version": "3.0.0"
     }
   },
@@ -26,6 +38,16 @@
     "installation_type": "global",
     "name": "SuperClaude",
     "version": "3.0.0"
+  },
+  "mcp": {
+    "auto_update": false,
+    "enabled": true,
+    "servers": [
+      "sequential-thinking",
+      "context7",
+      "magic",
+      "playwright"
+    ]
   },
   "superclaude": {
     "auto_update": false,
