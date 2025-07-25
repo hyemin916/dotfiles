@@ -16,14 +16,7 @@
       "Bash(pip3 install:*)",
       "Bash(claude auth logout)",
       "WebFetch(domain:docs.anthropic.com)"
-    ],
-    "deny": []
+    ]
   },
-  "enableAllProjectMcpServers": true,
-  "hooks": {
-    "toolCall": {
-      "before": ["/Users/msbaek/.claude/claude-watch-hook.sh"]
-    }
-  }
+  "enableAllProjectMcpServers": true
 }
-
