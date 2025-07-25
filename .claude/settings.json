@@ -54,7 +54,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "terminal-notifier -title \"Claude Code - Stop\" -message \"Claude 응답이 완료되었습니다\" -sound default"
+            "command": "terminal-notifier -title \"Claude Code - Stop\" -message \"✅ Claude 응답이 완료되었습니다\" -sound default -timeout 30"
           }
         ]
       }
@@ -82,4 +82,3 @@
     ]
   }
 }
-
