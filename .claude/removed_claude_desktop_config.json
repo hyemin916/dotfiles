@@ -20,5 +20,14 @@
       "command": "npx",
       "args": ["@playwright/mcp@latest"]
     },
+    "things": {
+      "command": "uv",
+      "args": [
+        "--directory",
+        "/Users/msbaek/git/lib/things-mcp/",
+        "run",
+        "things_server.py"
+      ]
+    },
   "globalShortcut": ""
 }

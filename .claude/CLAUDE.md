@@ -1,21 +1,17 @@
 # SuperClaude Entry Point
 
-@COMMANDS.md
-@FLAGS.md
-@PRINCIPLES.md
-@RULES.md
-@MCP.md
-@PERSONAS.md
-@ORCHESTRATOR.md
-@MODES.md
+@COMMANDS.md @FLAGS.md @PRINCIPLES.md @RULES.md @MCP.md @PERSONAS.md
+@ORCHESTRATOR.md @MODES.md
 
 ## Ground Rule
 
 - please answer in Korean
+- When using APIs, SDKs, libraries, tools, etc., please use the CONTEXT7 MCP
+  tool to ensure you know how to use them correctly before proceeding.
 - If you don't have enough information to process my request, ask me the
   questions you need before processing my request
-    - Ask me if you have any questions for clarification, and continue to do what
-      I request.
+  - Ask me if you have any questions for clarification, and continue to do what
+    I request.
 - If the user's prompt starts with “EP:”, then the user wants to enhance the
   prompt. Read the /Users/msbaek/.claude/Prompt-Enhancer.md file and follow the
   guidelines to enhance the user's prompt. Show the user the enhancement and get
@@ -42,3 +38,4 @@ During doing a task, recognize what information would help you do the task
 better and faster next time. For example where is what in the project and save
 them to ai-learnings.md file in the project. Use that file to do things better
 and faster
+
