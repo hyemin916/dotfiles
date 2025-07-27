@@ -142,3 +142,12 @@ source /Users/msbaek/.config/broot/launcher/bash/br
 # Task Master aliases added on 2025. 7. 17.
 alias tm='task-master'
 alias taskmaster='task-master'
+
+# Node.js LTS 업데이트 함수
+update-node-lts() {
+    echo "Updating to latest LTS..."
+    nvm install --lts
+    nvm alias default lts/\*
+    nvm use default
+    echo "Node.js updated to: $(node --version)"
+}
