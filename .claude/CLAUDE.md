@@ -52,11 +52,18 @@ and faster
 
 ## Obsidian Vault 작업 패턴
 
+- Obsidian vault 작업 시 hierarchical tags (#category/subcategory/detail) 형식을 사용하고, 디렉토리 기반 태그보다 개념 중심 태그를 선호해주세요
+- vault의 태그 체계는 5가지 카테고리(Topic, Document Type, Source, Status, Project)를 기준으로 적용해주세요
 - Zettelkasten 방법론: 000-SLIPBOX (개인 인사이트), 001-INBOX (수집),
   003-RESOURCES (참고자료)
 - Hierarchical tags: #category/subcategory/detail 형식 사용
 - 파일 분석 시 중복 파일("사본"), 빈 폴더, 임시 파일 체크
 - vault-analysis/ 폴더에 분석 결과 저장
+
+## Vault 태그 체계
+- vault_root vault-analysus/improved-hierarchical-tags-guide.md 참조
+  - 디렉토리 기반 태그(resources/, slipbox/) 제거
+  - development/ prefix 제거 (대부분 개발 관련)
 
 ## 파일 처리 오류 시
 
