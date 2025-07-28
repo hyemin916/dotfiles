@@ -31,6 +31,17 @@
   `sg --lang rust -p '<pattern>'` (or set `--lang` appropriately) and avoid
   falling back to text-only tools like `rg` or `grep` unless I explicitly
   request a plain-text search.
+- 대규모 파일 분석이나 vault 정리 작업 시에는 Task 도구와 sub-agent를 적극
+  활용하여 최대한 병렬 처리해서 효율성을 높여주세요
+- 반복 가능한 작업을 수행할 때는 향후 재사용을 위해 작업 절차를 문서화해주세요
+- 대규모 변경 작업 시에는 처음 몇가지 경우에 대한 샘플을 먼저 보여주고 사용자의
+  확인을 받은 후 전체 작업을 진행해주세요
+- "slash commands" 관련 요청을 처리할 때는
+  https://docs.anthropic.com/en/docs/claude-code/slash-commands 이 url의 정보를
+  활용해서 대응해줘
+- claude code "agents", "sub agents" 등에 대한 요청을 처리할 때는
+  https://docs.anthropic.com/en/docs/claude-code/sub-agents 이 url의 정보를
+  활용해서 대응해줘
 
 ## LEARNING
 
@@ -39,3 +50,16 @@ better and faster next time. For example where is what in the project and save
 them to ai-learnings.md file in the project. Use that file to do things better
 and faster
 
+## Obsidian Vault 작업 패턴
+
+- Zettelkasten 방법론: 000-SLIPBOX (개인 인사이트), 001-INBOX (수집),
+  003-RESOURCES (참고자료)
+- Hierarchical tags: #category/subcategory/detail 형식 사용
+- 파일 분석 시 중복 파일("사본"), 빈 폴더, 임시 파일 체크
+- vault-analysis/ 폴더에 분석 결과 저장
+
+## 파일 처리 오류 시
+
+- 읽기 오류 파일은 별도 문서(UNPROCESSED-FILES.md)에 기록
+- 오류 원인: 특수문자 인코딩, 심볼릭 링크, 권한 문제 등
+- Canvas 파일(.canvas)과 이미지 파일은 태그 적용 대상에서 제외
