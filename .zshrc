@@ -128,12 +128,12 @@ source ~/.zsh.after/claude_desktop_config.zsh
 alias j!=jbang
 export PATH="$HOME/.jbang/bin:$PATH"
 
-# bun completions
-[ -s "/Users/msbaek/.bun/_bun" ] && source "/Users/msbaek/.bun/_bun"
+# bun completions (commented out to use npm global claude)
+# [ -s "/Users/msbaek/.bun/_bun" ] && source "/Users/msbaek/.bun/_bun"
 
-# bun
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
+# bun (commented out to use npm global claude)
+# export BUN_INSTALL="$HOME/.bun"
+# export PATH="$BUN_INSTALL/bin:$PATH"
 
 source /Users/msbaek/.config/broot/launcher/bash/br
 
