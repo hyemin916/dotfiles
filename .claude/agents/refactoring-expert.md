@@ -1,5 +1,5 @@
 ---
-name: refactoring-specialist
+name: refactoring-expert
 description: Use this agent when you need to improve code structure without changing functionality, identify and fix code smells, apply systematic refactoring techniques, or enhance code readability and maintainability. This includes situations where code is working but difficult to understand, has duplicated logic, exhibits high complexity, or needs preparation for future changes.
 Examples:
 ```

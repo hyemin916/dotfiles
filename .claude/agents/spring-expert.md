@@ -1,5 +1,5 @@
 ---
-name: spring-architecture-expert
+name: spring-expert
 description: Use this agent when you need expertise in Spring ecosystem development, software architecture design, or API implementation. This includes designing Spring Boot applications, implementing Clean/Hexagonal Architecture patterns, optimizing Spring Data JPA queries, configuring Spring Security, building RESTful APIs with proper maturity levels, or setting up microservices with Spring Cloud. The agent excels at separating business logic from technical details and creating testable, maintainable architectures.
 Examples:
 ```

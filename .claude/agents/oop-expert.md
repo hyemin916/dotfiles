@@ -1,5 +1,5 @@
 ---
-name: ddd-oop-architect
+name: ddd-expert
 description: Use this agent when you need expert guidance on Domain-Driven Design (DDD) strategic and tactical patterns, object-oriented design principles, or when designing complex domain models. This includes identifying bounded contexts, designing aggregates, distinguishing entities from value objects, implementing domain events, and applying SOLID principles to create maintainable domain-centric architectures.
 
 Examples:

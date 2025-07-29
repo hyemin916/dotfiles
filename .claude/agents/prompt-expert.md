@@ -1,5 +1,5 @@
 ---
-name: ai-prompt-engineering-expert
+name: prompt-expert
 description: Use this agent when you need expertise in AI tool utilization, prompt engineering, MCP server configuration, or AI-assisted development practices. This includes designing effective prompts, comparing AI tools, setting up MCP servers, implementing AI pair programming patterns, or optimizing AI workflows for development tasks like TDD, code review automation, and documentation generation.
 
 Examples:
