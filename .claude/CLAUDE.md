@@ -1,8 +1,3 @@
-# SuperClaude Entry Point
-
-@COMMANDS.md @FLAGS.md @PRINCIPLES.md @RULES.md @MCP.md @PERSONAS.md
-@ORCHESTRATOR.md @MODES.md
-
 ## Ground Rule
 
 - please answer in Korean
@@ -36,12 +31,13 @@
 - 반복 가능한 작업을 수행할 때는 향후 재사용을 위해 작업 절차를 문서화해주세요
 - 대규모 변경 작업 시에는 처음 몇가지 경우에 대한 샘플을 먼저 보여주고 사용자의
   확인을 받은 후 전체 작업을 진행해주세요
-- "slash commands" 관련 요청을 처리할 때는
-  https://docs.anthropic.com/en/docs/claude-code/slash-commands 이 url의 정보를
-  활용해서 대응해줘
-- claude code "agents", "sub agents" 등에 대한 요청을 처리할 때는
-  https://docs.anthropic.com/en/docs/claude-code/sub-agents 이 url의 정보를
-  활용해서 대응해줘
+- 다음과 같은 키워드가 포함된 요청을 처리할 때는 관련 url의 정보를 활용해서
+  대응해주세요:
+  - claude code"slash commands" -
+    <https://docs.anthropic.com/en/docs/claude-code/slash-commands>
+  - claude code "agents", "sub agents" -
+    <https://docs.anthropic.com/en/docs/claude-code/sub-agents>
+  - tmux orchestator - <https://github.com/Jedward23/Tmux-Orchestrator>
 
 ## LEARNING
 
@@ -52,8 +48,10 @@ and faster
 
 ## Obsidian Vault 작업 패턴
 
-- Obsidian vault 작업 시 hierarchical tags (#category/subcategory/detail) 형식을 사용하고, 디렉토리 기반 태그보다 개념 중심 태그를 선호해주세요
-- vault의 태그 체계는 5가지 카테고리(Topic, Document Type, Source, Status, Project)를 기준으로 적용해주세요
+- Obsidian vault 작업 시 hierarchical tags (#category/subcategory/detail) 형식을
+  사용하고, 디렉토리 기반 태그보다 개념 중심 태그를 선호해주세요
+- vault의 태그 체계는 5가지 카테고리(Topic, Document Type, Source, Status,
+  Project)를 기준으로 적용해주세요
 - Zettelkasten 방법론: 000-SLIPBOX (개인 인사이트), 001-INBOX (수집),
   003-RESOURCES (참고자료)
 - Hierarchical tags: #category/subcategory/detail 형식 사용
@@ -61,6 +59,7 @@ and faster
 - vault-analysis/ 폴더에 분석 결과 저장
 
 ## Vault 태그 체계
+
 - vault_root vault-analysus/improved-hierarchical-tags-guide.md 참조
   - 디렉토리 기반 태그(resources/, slipbox/) 제거
   - development/ prefix 제거 (대부분 개발 관련)
@@ -70,3 +69,4 @@ and faster
 - 읽기 오류 파일은 별도 문서(UNPROCESSED-FILES.md)에 기록
 - 오류 원인: 특수문자 인코딩, 심볼릭 링크, 권한 문제 등
 - Canvas 파일(.canvas)과 이미지 파일은 태그 적용 대상에서 제외
+
