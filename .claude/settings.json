@@ -1,7 +1,11 @@
 {
   "env": {},
   "permissions": {
-    "allow": ["Bash(npm run lint)", "Bash(npm run test:*)"],
+    "allow": [
+      "Bash(npm run lint)", 
+      "Bash(npm run test:*)",
+      "WebFetch"
+    ],
     "deny": []
   },
   "model": "opus",
@@ -12,7 +16,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "terminal-notifier -title \"Claude Code - PreToolUse\" -message \"💄🥷🏻💄🥷🏻 도구 실행 준비 중: $CLAUDE_TOOL_NAME 💄🥷🏻💄🥷🏻\" -sound default"
+            "command": "terminal-notifier -title \"Claude Code - PreToolUse\" -message \"🚨🚨🚨 도구 실행 준비 중: $CLAUDE_TOOL_NAME 🚨🚨🚨\" -sound default"
           }
         ]
       }
@@ -22,10 +26,10 @@
         "hooks": [
           {
             "type": "command",
-            "command": "terminal-notifier -title \"Claude Code - Stop\" -message \"💄🥷🏻💄🥷🏻✅ Claude 응답이 완료되었습니다\ 💄🥷🏻💄🥷🏻✅" -sound default -timeout 30"
+            "command": "terminal-notifier -title \"Claude Code - Stop\" -message \"🚨🚨🚨 Claude 응답이 완료되었습니다 🚨🚨🚨\" -sound default -timeout 30"
           }
         ]
       }
-    ],
+    ]
   }
 }

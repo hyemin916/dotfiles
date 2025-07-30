@@ -15,7 +15,8 @@
       "Bash(pkg-config:*)",
       "Bash(pip3 install:*)",
       "Bash(claude auth logout)",
-      "WebFetch(domain:docs.anthropic.com)"
+      "WebFetch(domain:docs.anthropic.com)",
+      "WebFetch(domain:valentjn.github.io)"
     ]
   },
   "enableAllProjectMcpServers": true

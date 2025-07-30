@@ -151,3 +151,9 @@ update-node-lts() {
     nvm use default
     echo "Node.js updated to: $(node --version)"
 }
+
+update-claude-code() {
+    echo "Updating Claude Code..."
+    npm update -g @anthropic-ai/claude-code
+    echo "Claude Code updated to: $(claude --version)"
+}
