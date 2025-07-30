@@ -1,8 +1,8 @@
 return {
   "epwalsh/obsidian.nvim",
   version = "*", -- recommended, use latest release instead of latest commit
-  lazy = true,
-  ft = "markdown",
+  lazy = false, -- lazy loading을 비활성화하여 즉시 로드
+  -- ft = "markdown", -- ft 조건 제거
   -- Replace the above line with this if you only want to load obsidian.nvim for markdown files in your vault:
   -- event = {
   --   -- If you want to use the home shortcut '~' here you need to call 'vim.fn.expand'.
@@ -41,7 +41,7 @@ return {
     },
 
     completion = {
-      nvim_cmp = true,
+      nvim_cmp = false, -- nvim-cmp 통합 비활성화
       min_chars = 2,
       --   -- new_notes_location = "current_dir",
       --   -- prepend_note_id = true,
