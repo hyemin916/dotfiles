@@ -157,3 +157,5 @@ update-claude-code() {
     npm update -g @anthropic-ai/claude-code
     echo "Claude Code updated to: $(claude --version)"
 }
+
+alias add_serena='~/bin/add-serena.sh'
