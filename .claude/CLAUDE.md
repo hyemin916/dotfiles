@@ -33,11 +33,13 @@
   확인을 받은 후 전체 작업을 진행해주세요
 - 다음과 같은 키워드가 포함된 요청을 처리할 때는 관련 url의 정보를 활용해서
   대응해주세요:
-  - claude code"slash commands" -
+  - claude-code"slash commands" -
     <https://docs.anthropic.com/en/docs/claude-code/slash-commands>
-  - claude code "agents", "sub agents" -
+  - claude-code "agents", "sub agents" -
     <https://docs.anthropic.com/en/docs/claude-code/sub-agents>
-  - tmux orchestator - <https://github.com/Jedward23/Tmux-Orchestrator>
+  - tmux-orchestator - <https://github.com/Jedward23/Tmux-Orchestrator>
+    - tmux-orchestator는 /Users/msbaek/git/lib/Tmux-Orchestrator/ 에 clone 되어
+      있음
 
 ## LEARNING
 
@@ -69,4 +71,3 @@ and faster
 - 읽기 오류 파일은 별도 문서(UNPROCESSED-FILES.md)에 기록
 - 오류 원인: 특수문자 인코딩, 심볼릭 링크, 권한 문제 등
 - Canvas 파일(.canvas)과 이미지 파일은 태그 적용 대상에서 제외
-
