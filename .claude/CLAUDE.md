@@ -26,6 +26,8 @@
   `sg --lang rust -p '<pattern>'` (or set `--lang` appropriately) and avoid
   falling back to text-only tools like `rg` or `grep` unless I explicitly
   request a plain-text search.
+- grep을 사용해야 하는 경우 가급적 rg를 사용해주세요
+- find를 사용해야 하는 경우 가급적 fd를 사용해주세요
 - 대규모 파일 분석이나 vault 정리 작업 시에는 Task 도구와 sub-agent를 적극
   활용하여 최대한 병렬 처리해서 효율성을 높여주세요
 - 반복 가능한 작업을 수행할 때는 향후 재사용을 위해 작업 절차를 문서화해주세요
