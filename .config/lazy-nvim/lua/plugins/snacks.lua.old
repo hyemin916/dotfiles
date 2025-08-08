@@ -1,0 +1,26 @@
+-- ~/.config/nvim/lua/plugins/snacks.lua
+return {
+  "folke/snacks.nvim",
+  ft = { "png", "jpg", "jpeg", "webp" },
+  opts = {
+    image = {
+      force = false, -- 터미널 미지원 시 강제 실행 여부
+      wo = { -- 이미지 창 설정
+        wrap = false,
+        number = false,
+        relativenumber = false,
+      },
+    },
+  },
+  dependencies = {
+    "nvim-lua/plenary.nvim",
+    {
+      "adelarsq/image_preview.nvim",
+      config = function()
+        require("image_preview").setup({
+          use_kitty_protocol = true, -- Kitty 프로토콜 강제 활성화 [6]
+        })
+      end,
+    },
+  },
+}

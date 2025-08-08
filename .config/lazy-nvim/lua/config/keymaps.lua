@@ -912,6 +912,19 @@ vim.keymap.set("v", "<leader>mb", function()
   end
 end, { desc = "[P]BOLD current selection" })
 
+vim.keymap.set("v", "<leader>mi", function()
+  -- Get the selected text range
+  local start_row, start_col = unpack(vim.fn.getpos("'<"), 2, 3)
+  local end_row, end_col = unpack(vim.fn.getpos("'>"), 2, 3)
+  -- Get the selected lines
+  local lines = vim.api.nvim_buf_get_lines(0, start_row - 1, end_row, false)
+  local selected_text = table.concat(lines, "\n"):sub(start_col, #lines == 1 and end_col or -1)
+  if selected_text:match("^%*.*%*$") then
+    vim.notify("Text already italic", vim.log.levels.INFO)
+  else
+    vim.cmd("normal gsa*")
+  end
+end, { desc = "[P]BOLD current selection" })
 -- -- Multiline unbold attempt
 -- -- In normal mode, bold the current word under the cursor
 -- -- If already bold, it will unbold the word under the cursor
@@ -1846,6 +1859,7 @@ vim.keymap.set({ "n" }, "<leader>zn", "<cmd>ObsidianNewFromTemplate<CR>", { desc
 vim.keymap.set({ "n" }, "<leader>zo", "<cmd>ObsidianOpen<CR>", { desc = "open in obsidian", remap = true })
 vim.keymap.set({ "n" }, "<leader>zf", "<cmd>ObsidianFollowLink<CR>", { desc = "follow link", remap = true })
 vim.keymap.set({ "n" }, "<leader>zb", "<cmd>ObsidianBacklinks<CR>", { desc = "back links", remap = true })
+vim.keymap.set({ "n" }, "<leader>zd", "<cmd>ObsidianDailies<CR>", { desc = "dailies", remap = true })
 vim.keymap.set({ "n" }, "<leader>zt", "<cmd>ObsidianTemplate<CR>", { desc = "tags", remap = true })
 vim.keymap.set({ "n" }, "<leader>zp", "<cmd>ObsidianPasteImg<CR>", { desc = "page image", remap = true })
 vim.keymap.set({ "n" }, "<leader>zq", "<cmd>ObsidianQuickSwitch<CR>", { desc = "quick switch", remap = true })
@@ -1858,14 +1872,22 @@ vim.keymap.set({ "n" }, "<leader>mp", "<cmd>MarkdownPreview<CR>", { desc = "prev
 vim.keymap.set("n", "gp", "`[v`]", { noremap = true, desc = "Select last pasted text" })
 vim.keymap.set("n", "<leader>v", "gv", { noremap = true, desc = "Reselect previous visual selection" })
 vim.keymap.set("i", "jk", "<ESC>")
+vim.keymap.set("i", "jj", "<ESC>")
+vim.keymap.set("n", "j", "gj")
+vim.keymap.set("n", "k", "gk")
+-- vim.keymap.set("n", "<C-h>", "0")
+-- vim.keymap.set("n", "<C-j>", "^")
+-- vim.keymap.set("n", "<C-l>", "$")
+-- vim.keymap.set("n", "L", "$")
 
 -- Move lines up and down
-vim.keymap.set("n", "<C-j>", ":m .+1<CR>==")
-vim.keymap.set("n", "<C-k>", ":m .-2<CR>==")
-vim.keymap.set("i", "<C-j>", "<Esc>:m .+1<CR>==gi")
-vim.keymap.set("i", "<C-k>", "<Esc>:m .-1<CR>==gi")
-vim.keymap.set("v", "<C-j>", ":m '>+1<CR>gv=gv")
-vim.keymap.set("v", "<C-k>", ":m '<-2<CR>gv=gv")
+-- vim.keymap.set("n", "<C-j>", ":m .+1<CR>==")
+-- vim.keymap.set("n", "<C-k>", ":m .-2<CR>==")
+-- vim.keymap.set("i", "<C-j>", "<Esc>:m .+1<CR>==gi")
+-- vim.keymap.set("i", "<C-k>", "<Esc>:m .-1<CR>==gi")
+-- vim.keymap.set("v", "<C-j>", ":m '>+1<CR>gv=gv")
+-- vim.keymap.set("v", "<C-k>", ":m '<-2<CR>gv=gv")
+--
 -- vim.keymap.set("n", "yy", "_", { noremap = true, desc = "Move to line start" })
 -- vim.keymap.set("n", "rr", "$", { noremap = true, desc = "Move to line end" })
 -- ObsidianLink

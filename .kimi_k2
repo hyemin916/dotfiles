@@ -1,0 +1,3 @@
+export ANTHROPIC_BASE_URL=https://api.moonshot.ai/anthropic
+export ANTHROPIC_AUTH_TOKEN=sk-k92HizSyI7L9rqrygsQeKBhhxGRqb1qeH2JmGBJ0dpk683QL
+export CLAUDE_CODE_USE_BEDROCK=0

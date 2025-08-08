@@ -1,6 +1,3 @@
-# Amazon Q pre block. Keep at the top of this file.
-[[ -f "${HOME}/Library/Application Support/amazon-q/shell/zshrc.pre.zsh" ]] && builtin source "${HOME}/Library/Application Support/amazon-q/shell/zshrc.pre.zsh"
-# Q pre block. Keep at the top of this file.
 # # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -118,7 +115,47 @@ source $ZSH/oh-my-zsh.sh
 
 source ~/.zsh.after/msbaek.zsh
 source ~/.zsh.after/ktown4u.zsh
+source ~/.zsh.after/claude_desktop_config.zsh
 
 # Q post block. Keep at the bottom of this file.export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# Added by LM Studio CLI (lms)
+# export PATH="$PATH:/Users/msbaek/.cache/lm-studio/bin"
+
+# Add JBang to environment
+alias j!=jbang
+export PATH="$HOME/.jbang/bin:$PATH"
+
+# bun completions (commented out to use npm global claude)
+# [ -s "/Users/msbaek/.bun/_bun" ] && source "/Users/msbaek/.bun/_bun"
+
+# bun (commented out to use npm global claude)
+# export BUN_INSTALL="$HOME/.bun"
+# export PATH="$BUN_INSTALL/bin:$PATH"
+
+source /Users/msbaek/.config/broot/launcher/bash/br
+
+[[ "$TERM_PROGRAM" == "kiro" ]] && . "$(kiro --locate-shell-integration-path zsh)"
+
+# Task Master aliases added on 2025. 7. 17.
+alias tm='task-master'
+alias taskmaster='task-master'
+
+# Node.js LTS 업데이트 함수
+update-node-lts() {
+    echo "Updating to latest LTS..."
+    nvm install --lts
+    nvm alias default lts/\*
+    nvm use default
+    echo "Node.js updated to: $(node --version)"
+}
+
+update-claude-code() {
+    echo "Updating Claude Code..."
+    npm update -g @anthropic-ai/claude-code
+    echo "Claude Code updated to: $(claude --version)"
+}
+
+alias add_serena='~/bin/add-serena.sh'

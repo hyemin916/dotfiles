@@ -56,8 +56,8 @@ on-focus-changed = "move-mouse window-lazy-center"
 inner.horizontal = 20
 inner.vertical = 20
 outer.left = 20
-outer.bottom = 20
-outer.top = 20
+outer.bottom = 10
+outer.top = 10
 outer.right = 20
 
 # 'main' binding mode declaration
@@ -111,6 +111,16 @@ alt-u = 'workspace u'
 alt-i = 'workspace i'
 alt-o = 'workspace o'
 alt-p = 'workspace p'
+alt-d = 'workspace d'
+#alt-f = 'workspace f'
+alt-g = 'workspace g'
+alt-z = 'workspace z'
+alt-x = 'workspace x'
+alt-c = 'workspace c'
+alt-v = 'workspace v'
+alt-b = 'workspace b'
+alt-n = 'workspace n'
+alt-m = 'workspace m'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
 alt-shift-q = 'move-node-to-workspace q'
@@ -123,6 +133,18 @@ alt-shift-u = 'move-node-to-workspace u'
 alt-shift-i = 'move-node-to-workspace i'
 alt-shift-o = 'move-node-to-workspace o'
 alt-shift-p = 'move-node-to-workspace p'
+# alt-shift-p = 'move-node-to-workspace a'
+# alt-shift-p = 'move-node-to-workspace s'
+alt-shift-d = 'move-node-to-workspace d'
+#alt-shift-f = 'move-node-to-workspace f'
+alt-shift-g = 'move-node-to-workspace g'
+alt-shift-z = 'move-node-to-workspace z'
+alt-shift-x = 'move-node-to-workspace x'
+alt-shift-c = 'move-node-to-workspace c'
+alt-shift-v = 'move-node-to-workspace v'
+alt-shift-b = 'move-node-to-workspace b'
+alt-shift-n = 'move-node-to-workspace n'
+alt-shift-m = 'move-node-to-workspace m'
 
 # Add keybind to fullscreen a window
 alt-shift-f = 'fullscreen'
@@ -168,9 +190,40 @@ alt-shift-k = ['join-with up', 'mode main']
 alt-shift-l = ['join-with right', 'mode main']
 
 ############
-#
+[[on-window-detected]]
+if.app-id = 'dev.kdrag0n.MacVirt'
+run = 'layout floating'
+
+[[on-window-detected]]
+if.app-id = 'dev.zed.Zed'
+run = 'layout floating'
+
+[[on-window-detected]]
+if.app-id = 'com.jiransoft.S1ESP'
+run = 'layout floating'
+
+[[on-window-detected]]
+if.app-id = 'ai.elementlabs.lmstudio'
+run = 'layout floating'
+
+[[on-window-detected]]
+if.app-id = 'com.renfei.SnippetsLab'
+run = 'layout floating'
+
+[[on-window-detected]]
+if.app-id = 'app.msty.app'
+run = 'layout floating'
+
 [[on-window-detected]]
 if.app-id = 'com.daisydiskapp.DaisyDiskStandAlone'
+run = 'layout floating'
+
+[[on-window-detected]]
+if.app-id = 'com.microsoft.Powerpoint'
+run = 'layout floating'
+
+[[on-window-detected]]
+if.app-id = 'com.anthropic.claudefordesktop'
 run = 'layout floating'
 
 [[on-window-detected]]
@@ -179,6 +232,11 @@ run = 'layout floating'
 
 [[on-window-detected]]
 if.app-id = 'com.linguee.DeepLCopyTranslator'
+run = 'layout floating'
+
+
+[[on-window-detected]]
+if.app-id = 'com.apple.iWork.Numbers'
 run = 'layout floating'
 
 # [[on-window-detected]]
@@ -202,14 +260,6 @@ if.app-id = 'com.apple.Notes'
 run = 'layout floating'
 
 [[on-window-detected]]
-if.app-id = 'com.apple.iWork.Numbers'
-run = 'layout floating'
-
-[[on-window-detected]]
-if.app-id = 'com.apple.iWork.Keynote'
-run = 'layout floating'
-
-[[on-window-detected]]
 if.app-id = 'com.microsoft.Excel'
 run = 'layout floating'
 
@@ -220,29 +270,26 @@ run = 'layout floating'
 [[on-window-detected]]
 if.app-id = 'QReader.MarginStudy.easy'
 run = 'layout floating'
-#
-############
-#
 
 [[on-window-detected]]
-if.app-id = 'com.github.wez.wezterm'
-run = "move-node-to-workspace p"
+if.app-id = 'com.amazonaws.acvc.osx'
+run = 'layout floating'
 
 [[on-window-detected]]
 if.app-id = 'com.mitchellh.ghostty'
-run = "move-node-to-workspace p"
+run = 'layout floating'
+
+#
+############
+#
 
 [[on-window-detected]]
 if.app-id = 'company.thebrowser.Browser'
 run = "move-node-to-workspace q"         # Arc
 
 [[on-window-detected]]
-if.app-id = 'net.xmind.vana.app'
-run = "move-node-to-workspace q"
-
-[[on-window-detected]]
 if.app-id = 'md.obsidian'
-run = "move-node-to-workspace q"
+run = "move-node-to-workspace o"
 
 [[on-window-detected]]
 if.app-id = 'com.microsoft.teams2'
@@ -257,21 +304,8 @@ if.app-id = 'com.culturedcode.ThingsMac'
 run = "move-node-to-workspace w"
 
 [[on-window-detected]]
-if.app-id = 'com.amazonaws.acvc.osx'
-run = "move-node-to-workspace w"
-
-
-[[on-window-detected]]
-if.app-id = 'com.jetbrains.datagrip'
-run = "move-node-to-workspace e"
-
-[[on-window-detected]]
-if.app-id = 'com.todesktop.230313mzl4w4u92'
-run = "move-node-to-workspace e"            ## cursro
-
-[[on-window-detected]]
 if.app-id = 'com.jetbrains.intellij'
-run = "move-node-to-workspace e"
+run = "move-node-to-workspace i"
 
 [[on-window-detected]]
 if.app-id = 'com.apple.mail'
@@ -282,17 +316,12 @@ if.app-id = 'com.apple.iCal'
 run = "move-node-to-workspace t"
 
 [[on-window-detected]]
+if.app-id = 'company.thebrowser.dia'
+run = "move-node-to-workspace o"
+
+[[on-window-detected]]
 if.app-id = 'com.google.Chrome'
 run = "move-node-to-workspace y"
-
-[[on-window-detected]]
-if.app-id = 'net.kovidgoyal.kitty'
-run = "move-node-to-workspace y"
-
-[[on-window-detected]]
-if.app-id = 'com.amazonaws.acvc.osx'
-run = "move-node-to-workspace y"
-
 # exclude_from_tiling [
 # "com.kakao.KakaoTalkMac"
 # ]
@@ -320,4 +349,4 @@ run = "move-node-to-workspace y"
 # 23274 | com.apple.Preview                | 미리보기
 # 51045 | com.github.wez.wezterm           | WezTerm
 # 682  | com.google.Chrome                | Google Chrome
-# 4884 | net.kovidgoyal.kitty             | kitty
+# 4884 | net.kovidgoyal.kitty             | kittk

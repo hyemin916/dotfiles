@@ -96,7 +96,7 @@ return {
         -- -- $CURSOR will paste the image and place your cursor in that part so
         -- -- you can type the "alternative text", keep in mind that this will
         -- -- not affect the name that the image physically has
-        -- template = "![$CURSOR]($FILE_PATH)", ---@type string
+        -- template = "![$CURSOR]($FILE_PAHakonHarnes/img-clip.nvimTH)", ---@type string
         --
         -- -- This will just statically type "Image" in the alternative text
         -- template = "![Image]($FILE_PATH)", ---@type string

@@ -1,0 +1,33 @@
+{
+  "mcpServers": {
+    "browsermcp": {
+      "command": "npx",
+      "args": ["@browsermcp/mcp@latest"]
+    },
+    "puppeteer": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-puppeteer"]
+    },
+    "mcp-installer": {
+      "command": "npx",
+      "args": ["@anaisbetts/mcp-installer"]
+    },
+    "mcp-youtube": {
+      "command": "npx",
+      "args": ["@anaisbetts/mcp-youtube"]
+    },
+    "playwright": {
+      "command": "npx",
+      "args": ["@playwright/mcp@latest"]
+    },
+    "things": {
+      "command": "uv",
+      "args": [
+        "--directory",
+        "/Users/msbaek/git/lib/things-mcp/",
+        "run",
+        "things_server.py"
+      ]
+    },
+  "globalShortcut": ""
+}

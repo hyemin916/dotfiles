@@ -69,7 +69,7 @@ vim.opt.conceallevel = 2
 
 -- Keeps my cursor in the middle whenever possible
 -- This didn't work as expected, but the `stay-centered.lua` plugin did the trick
-vim.opt.scrolloff = 999
+-- vim.opt.scrolloff = 999
 
 -- When text reaches this limit, it automatically wraps to the next line.
 -- This WILL NOT auto wrap existing lines, or if you paste a long line into a
@@ -136,6 +136,13 @@ vim.opt.sessionoptions = {
 -- vim.opt.spelllang = { "en" }
 -- vim.opt.spelllang = { "en,ko" }
 -- vim.opt.spell = true
+vim.opt.spell = false
 
 -- My cursor was working fine, not  sure why it stopped working in wezterm, so this fixed it
 vim.opt.guicursor = "n-v-c-sm:block,i-ci-ve:ver25,r-cr-o:hor20,a:blinkwait700-blinkoff400-blinkon250-Cursor/lCursor"
+
+-- markdown-preview.nvim
+-- vim.g.mkdp_markdown_css = vim.fn.expand("~/.config/nvim/md-custom.css")
+vim.g.mkdp_markdown_css = vim.fn.expand("~/.config/nvim/markdown.css")
+vim.g.mkdp_highlight_css = vim.fn.expand("~/.config/nvim/highlight.css")
+vim.g.mkdp_theme = "none" -- 기본 테마 비활성화m

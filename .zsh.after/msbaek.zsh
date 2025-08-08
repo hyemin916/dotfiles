@@ -57,7 +57,6 @@ alias ta='tmux attach'
 set -o vi
 
 alias vi='nvim'
-alias gs='git status'
 alias gl='git log'
 alias find_wifi_pwd='security find-generic-password -wa '
 
@@ -74,7 +73,6 @@ export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init --path)"
 eval "$(pyenv init -)"
 
-export TT="zzz"
 export PATH="$HOME/.local/bin:$PATH"
 
 export OH_MY_ZSH=/users/msbaek/.oh-my-zsh/
@@ -200,5 +198,14 @@ export GOPATH=$HOME/go
 export PATH=$GOPATH/bin:$GOROOT/bin:$HOME/.local/bin:$PATH
 
 alias gdum='gdu -h -d 1'
+alias d2h='diff2html -s side'
+# unalias gsd
 
+export AWS_PROFILE=default
+# export ANTHROPIC_MODEL='us.anthropic.claude-sonnet-4-20250514-v1:0'
+# export DISABLE_PROMPT_CACHING=0
 FUNCNEST=100
+
+# Add to ~/.zshrc or ~/.bashrc
+alias cl='claude'
+alias cld='claude --dangerously-skip-permissions'
