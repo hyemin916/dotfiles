@@ -2,14 +2,9 @@
   "$schema": "https://json.schemastore.org/claude-code-settings.json",
   "env": {},
   "permissions": {
-    "allow": [
-      "Bash(npm run lint)",
-      "Bash(npm run test:*)",
-      "WebFetch"
-    ],
+    "allow": ["Bash(npm run lint)", "Bash(npm run test:*)", "WebFetch"],
     "deny": []
   },
-  "model": "opus",
   "hooks": {
     "PreToolUse": [
       {
@@ -31,9 +26,20 @@
           }
         ]
       }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 $CLAUDE_PROJECT_DIR/.claude/hooks/UserPromptSubmit/user_prompt_submit.py"
+          }
+        ]
+      }
     ]
   },
   "feedbackSurveyState": {
     "lastShownTime": 1754086039192
   }
 }
+
