@@ -26,16 +26,6 @@
           }
         ]
       }
-    ],
-    "UserPromptSubmit": [
-      {
-        "hooks": [
-          {
-            "type": "command",
-            "command": "python3 ~/.claude/hooks/UserPromptSubmit/user_prompt_submit.py"
-          }
-        ]
-      }
     ]
   },
   "feedbackSurveyState": {
