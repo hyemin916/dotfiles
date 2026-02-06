@@ -8,14 +8,14 @@
   - Ask me if you have any questions for clarification, and continue to do what
     I request.
 - If the user's prompt starts with “EP:”, then the user wants to enhance the
-  prompt. Read the /Users/msbaek/.claude/Prompt-Enhancer.md file and follow the
+  prompt. Read the /Users/hyemin/.claude/Prompt-Enhancer.md file and follow the
   guidelines to enhance the user's prompt. Show the user the enhancement and get
   their permission to run it before taking action on the enhanced prompt. The
   enhanced prompts will follow the language of the original prompt (e.g., Korean
   prompt input will output Korean prompt enhancements, English prompt input will
   output English prompt enhancements, etc.)
 - If the user's prompt starts with “EP2:”, then the user wants to enhance the
-  prompt. Read the /Users/msbaek/.claude/Prompt-Enhancer2.md file and follow the
+  prompt. Read the /Users/hyemin/.claude/Prompt-Enhancer2.md file and follow the
   guidelines to enhance the user's prompt. Show the user the enhancement and get
   their permission to run it before taking action on the enhanced prompt. The
   enhanced prompts will follow the language of the original prompt (e.g., Korean
@@ -40,7 +40,7 @@
   - claude-code "agents", "sub agents" -
     <https://docs.anthropic.com/en/docs/claude-code/sub-agents>
   - tmux-orchestator - <https://github.com/Jedward23/Tmux-Orchestrator>
-    - tmux-orchestator는 /Users/msbaek/git/lib/Tmux-Orchestrator/ 에 clone 되어
+    - tmux-orchestator는 /Users/hyemin/git/lib/Tmux-Orchestrator/ 에 clone 되어
       있음
 
 ## LEARNING
