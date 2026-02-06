@@ -1,0 +1,11 @@
+\.git
+\.gitignore
+\.claude
+\.claude-code-router
+\.serena
+README\.md
+LICENSE.*
+Brewfile
+RectangleConfig\.json
+settings\.json\.full
+active-colorscheme\.sh

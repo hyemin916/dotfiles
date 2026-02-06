@@ -1,3 +1,12 @@
+# Auto-start tmux
+if [ -x /opt/homebrew/bin/tmux ] && [ -z "$TMUX" ] && [ -t 0 ]; then
+  if /opt/homebrew/bin/tmux has-session 2>/dev/null; then
+    exec /opt/homebrew/bin/tmux attach
+  else
+    exec /opt/homebrew/bin/tmux new-session
+  fi
+fi
+
 # # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -113,11 +122,9 @@ source $ZSH/oh-my-zsh.sh
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-source ~/.zsh.after/msbaek.zsh
-source ~/.zsh.after/ktown4u.zsh
-source ~/.zsh.after/claude_desktop_config.zsh
+source ~/.zsh.after/hyemin.zsh
 
-# Q post block. Keep at the bottom of this file.export NVM_DIR="$HOME/.nvm"
+export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
@@ -135,9 +142,8 @@ export PATH="$HOME/.jbang/bin:$PATH"
 # export BUN_INSTALL="$HOME/.bun"
 # export PATH="$BUN_INSTALL/bin:$PATH"
 
-source /Users/msbaek/.config/broot/launcher/bash/br
+[ -f "$HOME/.config/broot/launcher/bash/br" ] && source "$HOME/.config/broot/launcher/bash/br"
 
-[[ "$TERM_PROGRAM" == "kiro" ]] && . "$(kiro --locate-shell-integration-path zsh)"
 
 # Task Master aliases added on 2025. 7. 17.
 alias tm='task-master'
@@ -159,3 +165,4 @@ update-claude-code() {
 }
 
 alias add_serena='~/bin/add-serena.sh'
+
