@@ -28,9 +28,7 @@
                         "description": "Right Option to Command+Space (한영전환)",
                         "manipulators": [
                             {
-                                "from": {
-                                    "key_code": "right_option"
-                                },
+                                "from": { "key_code": "right_command" },
                                 "to": [
                                     {
                                         "key_code": "spacebar",
