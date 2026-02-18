@@ -33,7 +33,7 @@ yabai -m space 6 --display 2
 yabai -m display --add 2 --space 6
 
 # global settings
-yabai -m config external_bar               all:35:0     \
+yabai -m config external_bar               all:0:0      \
                 window_border              on           \
                 mouse_follows_focus        off          \
                 focus_follows_mouse        off          \

@@ -38,6 +38,7 @@ cursor-style = block
 mouse-hide-while-typing = true
 mouse-scroll-multiplier = 2
 window-padding-balance = true
+window-padding-y = 0,80
 window-save-state = always
 window-colorspace = "display-p3"
 window-decoration = false
