@@ -1,6 +1,6 @@
 ## Ground Rule
 
-- please answer in Korean
+- please answer in English
 - When using APIs, SDKs, libraries, tools, etc., please use the CONTEXT7 MCP
   tool to ensure you know how to use them correctly before proceeding.
 - If you don't have enough information to process my request, ask me the
