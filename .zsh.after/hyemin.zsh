@@ -213,8 +213,8 @@ source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 #alias ls="eza --color=always --long --icons=always --no-user --no-permissions"
 alias ls="eza --color=always --icons=always -a -1 --git"
 
-export LANG=ko_KR.UTF-8
-export LC_ALL=ko_KR.UTF-8
+export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
 
 alias jhkeycloakup='docker-compose -f src/main/docker/keycloak.yml up -d'
 
