@@ -15,7 +15,6 @@
 # Unload the macOS WindowManager process
 launchctl unload -F /System/Library/LaunchAgents/com.apple.WindowManager.plist >/dev/null 2>&1 &
 
-
 # global settings
 yabai -m config external_bar all:0:0 \
   window_border on \
