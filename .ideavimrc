@@ -37,11 +37,10 @@ nnoremap <leader>r :action Refactorings.QuickListPopupAction<CR>
 vnoremap <Leader>m :action ExtractMethod<CR>
 nnoremap <Leader>m :action ExtractMethod<CR>
 nnoremap <Leader>j :action ShowIntentionActions<CR>
-nnoremap <Leader>v :action IntroduceVariable<CR>
+nnoremap <Leader>v :action RenameElement<CR>
 nnoremap <Leader>f :action IntroduceField<CR>
 nnoremap <Leader>p :action IntroduceParameter<CR>
 " nnoremap <leader>f :action GotoRelated<CR>
-nnoremap <Leader>z :action RenameElement<CR>
 nnoremap <Leader>mp :action ManageRecentProjects<CR>
 nnoremap <Leader>cp :action CloseProject<CR>
 

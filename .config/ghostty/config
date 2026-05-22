@@ -4,6 +4,7 @@ keybind = super+d=unbind
 # keybind = super+d=new_split:right
 # keybind = super+shift+d=new_split:down
 # keybind = super+s>shift+d=new_split:down
+
 # theme
 background = #fafafa
 foreground = #383a42
@@ -40,7 +41,7 @@ mouse-scroll-multiplier = 2
 window-padding-balance = true
 window-save-state = always
 window-colorspace = "display-p3"
-window-decoration = false
+window-decoration = true
 macos-titlebar-style = hidden
 # macos-titlebar-style=transparent
 # foreground = d4be98
@@ -55,9 +56,9 @@ background-opacity = 1
 keybind = cmd+s>r=reload_config
 keybind = cmd+s>x=close_surface
 keybind = cmd+s>n=new_window
+
 # tabs
-keybind = cmd+s>c=new_tab
-keybind = cmd+s>shift+l=next_tab
+# keybind = cmd+s>t=new_tab
 # keybind = super+d=new_split:right
 # keybind = super+shift+d=new_split:down
 # keybind = super+s>shift+d=new_split:down

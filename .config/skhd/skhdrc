@@ -1,33 +1,24 @@
-# Left command + Opt + hjkl을 화살표 키로 매핑
-lcmd + lalt - h : skhd -k "left"
-lcmd + lalt - j : skhd -k "down"  
-lcmd + lalt - k : skhd -k "up"
-lcmd + lalt - l : skhd -k "right"
-
 # App shortcuts
 # lalt + lcmd + lctrl + lshift - a: open -a 'Arc'
-lalt + lcmd + lshift - b: open -a 'Dia'
-lalt + lcmd + lshift - l: open -a 'Things3'
-lalt + lcmd + lshift - f: open -a 'Finder'
-lalt + lcmd + lshift - g: open -a 'Google Chrome'
-lalt + lcmd + lshift - i: open -a 'IntelliJ IDEA Ultimate'
-lalt + lcmd + lshift - m: open -a 'Mail'
-lalt + lcmd + lshift - o: open -a 'Obsidian'
-lalt + lcmd + lshift - p: open -a 'Preview'
-lalt + lcmd + lshift - s: open -a 'Slack'
-lalt + lcmd + lshift - t: open -a 'Ghostty'
-lalt + lcmd + lshift - k: open -a 'KakaoTalk'
-#
-# skhd --restart-service 
+lalt + ctrl - b: open -a 'Dia'
+lalt + ctrl - l: open -a 'Things3'
+lalt + ctrl - f: open -a 'Finder'
+lalt + ctrl - g: open -a 'Google Chrome'
+lalt + ctrl - i: open -a 'IntelliJ IDEA Ultimate'
+lalt + ctrl - m: open -a 'Mail'
+lalt + ctrl - o: open -a 'Obsidian'
+lalt + ctrl - p: open -a 'Preview'
+lalt + ctrl - s: open -a 'Slack'
+lalt + ctrl - t: open -a 'Ghostty'
+lalt + ctrl - k: open -a 'KakaoTalk'
+
 # focus window
-ctrl + alt - h : yabai -m window --focus west
-ctrl + alt - j : yabai -m window --focus south
-ctrl + alt - k : yabai -m window --focus north
-ctrl + alt - l : yabai -m window --focus east
+lalt - h : yabai -m window --focus west
+lalt - l : yabai -m window --focus east
+lalt - j : yabai -m window --focus north
+lalt - k : yabai -m window --focus south
 
-# toggle window zoom
-ctrl + alt - g : yabai -m window --toggle windowed-fullscreen
-ctrl + alt - f : yabai -m window --toggle zoom-fullscreen
+lalt - c : yabai -m window --toggle float --grid 4:4:1:1:2:2
 
-# toggle window split type
-shift + alt - e : yabai -m window --toggle split
+
+
