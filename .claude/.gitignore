@@ -1,0 +1,27 @@
+# Runtime / ephemeral files — not tracked in dotfiles
+history.jsonl
+.last-cleanup
+mcp-needs-auth-cache.json
+stats-cache.json
+
+# Runtime directories
+cache/
+sessions/
+projects/
+backups/
+debug/
+file-history/
+paste-cache/
+shell-snapshots/
+session-env/
+telemetry/
+statsig/
+todos/
+plans/
+ide/
+docs/
+plugins/
+memory/
+
+# Local settings (may contain API keys or machine-specific overrides)
+settings.local.json
