@@ -3,7 +3,7 @@
 lalt + ctrl - b: open -a 'Dia'
 lalt + ctrl - l: open -a 'Things3'
 lalt + ctrl - f: open -a 'Finder'
-lalt + ctrl - g: open -a 'Google Chrome'
+lalt + ctrl - g: open -a 'GoLand'
 lalt + ctrl - i: open -a 'IntelliJ IDEA Ultimate'
 lalt + ctrl - m: open -a 'Mail'
 lalt + ctrl - o: open -a 'Obsidian'
