@@ -1,266 +1,265 @@
 ---
 argument-hint:
   "[--depth shallow|deep] [--focus area] [--format summary|detailed] [--include-patterns] [--exclude-patterns]"
-description: "프로젝트 구조와 목적을 체계적으로 분석하여 종합적인 온보딩 정보 제공"
+description: "Systematically analyzes project structure and purpose to provide comprehensive onboarding information"
 ---
 
 # /on-boarding $ARGUMENTS
 
-현재 프로젝트의 구조, 목적, 기술 스택을 체계적으로 분석하여 종합적인 온보딩 정보를 제공합니다. 새로운 개발자가 프로젝트를 빠르게 이해하고 기여할 수 있도록 돕습니다.
+Systematically analyzes the current project's structure, purpose, and tech stack to provide comprehensive onboarding information. Helps new developers quickly understand the project and start contributing.
 
-$ARGUMENTS가 제공되지 않은 경우, 표준 깊이로 전체 프로젝트를 분석합니다.
+If $ARGUMENTS is not provided, the entire project is analyzed at standard depth.
 
-## 작업 프로세스
+## Task Process
 
-1. **프로젝트 구조 분석**
+1. **Project Structure Analysis**
 
-   - 디렉토리 구조 파악
-   - 주요 파일 식별 (README, package.json, 설정 파일 등)
-   - 코드베이스 규모 확인
+   - Understand the directory structure
+   - Identify key files (README, package.json, config files, etc.)
+   - Assess codebase size
 
-2. **기술 스택 파악**
+2. **Tech Stack Identification**
 
-   - 사용 언어 및 프레임워크
-   - 빌드 도구 및 패키지 매니저
-   - 의존성 분석
+   - Languages and frameworks used
+   - Build tools and package managers
+   - Dependency analysis
 
-3. **프로젝트 목적 이해**
+3. **Understanding Project Purpose**
 
-   - README 및 문서 분석
-   - 주요 기능 파악
-   - 비즈니스 도메인 이해
+   - Analyze README and documentation
+   - Identify core features
+   - Understand the business domain
 
-4. **코드 구조 분석**
+4. **Code Structure Analysis**
 
-   - 아키텍처 패턴 식별
-   - 모듈 구성 방식
-   - 코딩 컨벤션
+   - Identify architecture patterns
+   - Module organization
+   - Coding conventions
 
-5. **핵심 기능 요약**
+5. **Core Feature Summary**
 
-   - 주요 엔트리 포인트
-   - 핵심 비즈니스 로직
-   - API 또는 인터페이스
+   - Main entry points
+   - Core business logic
+   - APIs or interfaces
 
-6. **통합 코드베이스 이해**
+6. **Integrated Codebase Understanding**
 
-   - 아키텍처 패턴 및 설계 원칙 분석
-   - 핵심 데이터 모델 및 상태 관리 파악
-   - 인증/인가 체계 및 보안 구현 확인
-   - 주요 통합 지점 및 외부 의존성 매핑
+   - Analyze architecture patterns and design principles
+   - Identify core data models and state management
+   - Review authentication/authorization and security implementation
+   - Map key integration points and external dependencies
 
-## 옵션 설명
+## Options
 
-### 필수 옵션
-없음 - 모든 옵션은 선택사항입니다.
+### Required Options
+None — all options are optional.
 
-### 선택 옵션
+### Optional Options
 
-- `--depth [shallow|deep]`: 분석 깊이 제어
-  - `shallow`: 기본 구조와 설정만 분석 (기본값)
-  - `deep`: 코드 상세 분석 및 아키텍처 패턴 포함
+- `--depth [shallow|deep]`: Controls analysis depth
+  - `shallow`: Analyze only basic structure and configuration (default)
+  - `deep`: Include detailed code analysis and architecture patterns
 
-- `--focus [area]`: 특정 영역에 집중 분석
-  - `backend`: 서버 사이드 코드 및 API
-  - `frontend`: 클라이언트 사이드 및 UI
-  - `api`: API 엔드포인트 및 통합
-  - `database`: 데이터 모델 및 스키마
-  - `testing`: 테스트 전략 및 커버리지
-  - `devops`: 배포 및 인프라 구성
+- `--focus [area]`: Focus analysis on a specific area
+  - `backend`: Server-side code and APIs
+  - `frontend`: Client-side code and UI
+  - `api`: API endpoints and integrations
+  - `database`: Data models and schemas
+  - `testing`: Test strategy and coverage
+  - `devops`: Deployment and infrastructure configuration
 
-- `--format [summary|detailed]`: 출력 형식
-  - `summary`: 간략한 요약 (빠른 개요)
-  - `detailed`: 상세한 분석 (기본값)
+- `--format [summary|detailed]`: Output format
+  - `summary`: Brief overview (quick summary)
+  - `detailed`: Detailed analysis (default)
 
-- `--include-patterns [pattern]`: 포함할 파일 패턴
-  - 예: `"*.js"`, `"src/**/*.ts"`
+- `--include-patterns [pattern]`: File patterns to include
+  - e.g. `"*.js"`, `"src/**/*.ts"`
 
-- `--exclude-patterns [pattern]`: 제외할 파일 패턴
-  - 예: `"node_modules/**"`, `"*.test.js"`
+- `--exclude-patterns [pattern]`: File patterns to exclude
+  - e.g. `"node_modules/**"`, `"*.test.js"`
 
-## 사용 예시
+## Usage Examples
 
-### 기본 사용
+### Basic Usage
 ```
 > /on-boarding
 ```
-전체 프로젝트를 표준 깊이로 분석합니다.
+Analyzes the entire project at standard depth.
 
-### 깊은 분석으로 전체 아키텍처 파악
+### Deep analysis of full architecture
 ```
 > /on-boarding --depth deep
 ```
-코드 패턴, 아키텍처 원칙, 상세 의존성까지 분석합니다.
+Analyzes code patterns, architectural principles, and detailed dependencies.
 
-### 특정 영역 집중 분석
+### Focus on a specific area
 ```
 > /on-boarding --focus backend --depth deep
 ```
-백엔드 코드를 중심으로 상세 분석합니다.
+Detailed analysis centered on backend code.
 
-### 빠른 개요 확인
+### Quick overview
 ```
 > /on-boarding --format summary
 ```
-프로젝트의 핵심 정보만 간략하게 제공합니다.
+Provides only the essential project information briefly.
 
-### 특정 파일 패턴만 분석
+### Analyze specific file patterns only
 ```
 > /on-boarding --include-patterns "src/**/*.ts" --exclude-patterns "*.test.ts"
 ```
-TypeScript 소스 파일만 분석하되 테스트 파일은 제외합니다.
+Analyzes only TypeScript source files, excluding test files.
 
-### 복합 사용 예시
+### Combined usage
 ```
 > /on-boarding --focus api --depth deep --format detailed
 ```
-API 영역을 깊이 있게 분석하여 상세한 보고서를 생성합니다.
+Deeply analyzes the API area and generates a detailed report.
 
-## 출력 형식
+## Output Format
 
-명령 실행 시 다음과 같은 구조화된 정보를 제공합니다:
+When the command runs, the following structured information is provided:
 
-### 기본 출력 구조
+### Default Output Structure
 
 ```markdown
-# [프로젝트명] 온보딩 가이드
+# [Project Name] Onboarding Guide
 
-## 📋 프로젝트 개요
-- **목적**: [프로젝트의 주요 목적과 비즈니스 가치]
-- **타입**: [웹 애플리케이션 | API 서버 | 라이브러리 | CLI 도구 등]
-- **상태**: [Active Development | Production | Maintenance | Archived]
-- **시작일**: [프로젝트 시작 날짜]
+## 📋 Project Overview
+- **Purpose**: [Main purpose and business value of the project]
+- **Type**: [Web Application | API Server | Library | CLI Tool | etc.]
+- **Status**: [Active Development | Production | Maintenance | Archived]
+- **Start Date**: [Project start date]
 
-## 🛠 기술 스택
-### 핵심 기술
-- **언어**: [주 프로그래밍 언어 및 버전]
-- **프레임워크**: [주요 프레임워크 및 버전]
-- **데이터베이스**: [데이터베이스 시스템 및 버전]
+## 🛠 Tech Stack
+### Core Technologies
+- **Language**: [Primary programming language and version]
+- **Framework**: [Main framework and version]
+- **Database**: [Database system and version]
 
-### 개발 도구
-- **빌드 도구**: [빌드 시스템 및 태스크 러너]
-- **패키지 관리**: [의존성 관리 도구]
-- **테스트 프레임워크**: [테스트 도구 및 전략]
+### Development Tools
+- **Build Tool**: [Build system and task runner]
+- **Package Manager**: [Dependency management tool]
+- **Test Framework**: [Testing tools and strategy]
 
-## 📁 프로젝트 구조
+## 📁 Project Structure
 ```
-프로젝트루트/
-├── src/            # 메인 소스 코드
-│   ├── components/ # UI 컴포넌트
-│   ├── services/   # 비즈니스 로직
-│   └── utils/      # 유틸리티 함수
-├── tests/          # 테스트 스위트
-├── docs/           # 프로젝트 문서
-├── config/         # 설정 파일
-└── scripts/        # 빌드 및 배포 스크립트
+project-root/
+├── src/            # Main source code
+│   ├── components/ # UI components
+│   ├── services/   # Business logic
+│   └── utils/      # Utility functions
+├── tests/          # Test suite
+├── docs/           # Project documentation
+├── config/         # Configuration files
+└── scripts/        # Build and deployment scripts
 ```
 
-## 🎯 주요 기능 및 모듈
-### 핵심 기능
-1. **[기능명]**: [상세 설명 및 책임]
-2. **[기능명]**: [상세 설명 및 책임]
+## 🎯 Key Features and Modules
+### Core Features
+1. **[Feature Name]**: [Detailed description and responsibilities]
+2. **[Feature Name]**: [Detailed description and responsibilities]
 
-### 주요 모듈
-- `[모듈명]`: [모듈의 역할과 주요 API]
-- `[모듈명]`: [모듈의 역할과 주요 API]
+### Key Modules
+- `[Module Name]`: [Role and main APIs]
+- `[Module Name]`: [Role and main APIs]
 
-## 🏗 아키텍처 및 설계 패턴
-- **아키텍처 스타일**: [Layered | Microservices | Event-driven | Serverless 등]
-- **설계 패턴**: [사용된 주요 디자인 패턴]
-- **상태 관리**: [상태 관리 전략 및 도구]
-- **통신 방식**: [동기/비동기, REST/GraphQL/gRPC 등]
+## 🏗 Architecture and Design Patterns
+- **Architecture Style**: [Layered | Microservices | Event-driven | Serverless | etc.]
+- **Design Patterns**: [Key design patterns used]
+- **State Management**: [State management strategy and tools]
+- **Communication**: [Sync/async, REST/GraphQL/gRPC, etc.]
 
-## 🚀 빠른 시작 가이드
-### 사전 요구사항
-- [필수 도구 및 버전]
-- [시스템 요구사항]
+## 🚀 Quick Start Guide
+### Prerequisites
+- [Required tools and versions]
+- [System requirements]
 
-### 설치 및 실행
-1. **저장소 클론**
+### Installation and Running
+1. **Clone the repository**
    ```bash
    git clone [repository-url]
    cd [project-name]
    ```
 
-2. **의존성 설치**
+2. **Install dependencies**
    ```bash
-   [패키지 관리자 명령어]
+   [package manager command]
    ```
 
-3. **환경 설정**
+3. **Environment setup**
    ```bash
    cp .env.example .env
-   # .env 파일에 필요한 값 설정
+   # Set required values in .env file
    ```
 
-4. **애플리케이션 실행**
+4. **Run the application**
    ```bash
-   [실행 명령어]
+   [run command]
    ```
 
-## 🔧 개발 워크플로우
-### 주요 명령어
-- `[명령어]`: [설명]
-- `[명령어]`: [설명]
+## 🔧 Development Workflow
+### Key Commands
+- `[command]`: [description]
+- `[command]`: [description]
 
-### 브랜치 전략
-- [브랜치 전략 설명]
+### Branch Strategy
+- [Branch strategy description]
 
-### 코드 스타일
-- [코드 스타일 가이드 및 린터 설정]
+### Code Style
+- [Code style guide and linter configuration]
 
-## 📚 추가 리소스
-- **API 문서**: [링크 또는 경로]
-- **아키텍처 다이어그램**: [링크 또는 경로]
-- **기여 가이드**: [CONTRIBUTING.md 경로]
-- **이슈 트래커**: [이슈 관리 시스템 링크]
+## 📚 Additional Resources
+- **API Docs**: [link or path]
+- **Architecture Diagram**: [link or path]
+- **Contributing Guide**: [CONTRIBUTING.md path]
+- **Issue Tracker**: [issue management system link]
 
-## 🤝 팀 정보 및 연락처
-- **메인테이너**: [담당자 정보]
-- **커뮤니케이션**: [슬랙, 이메일 등]
+## 🤝 Team Info and Contacts
+- **Maintainers**: [contact information]
+- **Communication**: [Slack, email, etc.]
 ```
 
-## 분석 범위
+## Analysis Scope
 
-### Shallow 분석 (기본)
-- **프로젝트 메타데이터**: package.json, README, 설정 파일
-- **디렉토리 구조**: 폴더 계층 및 주요 파일 배치
-- **의존성 목록**: 외부 라이브러리 및 버전 정보
-- **기본 문서**: README, CONTRIBUTING, LICENSE 파싱
-- **실행 시간**: 일반적으로 30초 이내
+### Shallow Analysis (Default)
+- **Project Metadata**: package.json, README, config files
+- **Directory Structure**: Folder hierarchy and key file layout
+- **Dependency List**: External libraries and version info
+- **Basic Docs**: README, CONTRIBUTING, LICENSE parsing
+- **Execution Time**: Generally under 30 seconds
 
-### Deep 분석
-- **코드 아키텍처 패턴**: 설계 패턴, 모듈 구성, 의존성 그래프
-- **비즈니스 로직 흐름**: 핵심 워크플로우 및 데이터 흐름
-- **API 엔드포인트 분석**: REST/GraphQL 경로, 메서드, 파라미터
-- **데이터 모델 구조**: 엔티티 관계, 스키마 정의, 검증 규칙
-- **테스트 커버리지**: 테스트 전략, 커버리지 비율, 테스트 유형
-- **보안 고려사항**: 인증/인가 체계, 보안 취약점 패턴
-- **성능 특성**: 병목 지점, 최적화 기회, 리소스 사용
-- **실행 시간**: 프로젝트 규모에 따라 1-5분
+### Deep Analysis
+- **Code Architecture Patterns**: Design patterns, module structure, dependency graph
+- **Business Logic Flow**: Core workflows and data flows
+- **API Endpoint Analysis**: REST/GraphQL routes, methods, parameters
+- **Data Model Structure**: Entity relationships, schema definitions, validation rules
+- **Test Coverage**: Test strategy, coverage ratio, test types
+- **Security Considerations**: Auth/authorization schemes, security vulnerability patterns
+- **Performance Characteristics**: Bottlenecks, optimization opportunities, resource usage
+- **Execution Time**: 1–5 minutes depending on project size
 
-## 주의사항 및 제한사항
+## Notes and Limitations
 
-### 보안 관련
-- 민감한 정보(API 키, 비밀번호, 토큰 등)는 자동으로 마스킹됩니다
-- 환경 변수 파일(.env)은 구조만 분석하고 값은 표시하지 않습니다
-- 인증 정보가 포함된 설정 파일은 주의하여 처리됩니다
+### Security
+- Sensitive information (API keys, passwords, tokens, etc.) is automatically masked
+- Environment variable files (.env) are analyzed for structure only — values are not shown
+- Configuration files containing credentials are handled with care
 
-### 성능 관련
-- 대규모 프로젝트(10,000+ 파일)의 deep 분석은 시간이 소요될 수 있습니다
-- 필요시 `--include-patterns`와 `--exclude-patterns`를 활용하여 범위를 제한하세요
-- 초기 분석 후 캐싱되어 후속 실행이 더 빠릅니다
+### Performance
+- Deep analysis of large projects (10,000+ files) may take time
+- Use `--include-patterns` and `--exclude-patterns` to limit scope when needed
+- Results are cached after the initial analysis, so subsequent runs are faster
 
-### 분석 제외 항목
-- 바이너리 파일 및 미디어 파일
-- 빌드 결과물 및 생성된 코드
-- 패키지 매니저 캐시 디렉토리
-- 일반적인 제외 패턴: `node_modules/`, `dist/`, `build/`, `.git/`
+### Excluded from Analysis
+- Binary files and media files
+- Build artifacts and generated code
+- Package manager cache directories
+- Common exclusion patterns: `node_modules/`, `dist/`, `build/`, `.git/`
 
-## 관련 명령어
+## Related Commands
 
-- `/analyze`: 특정 코드나 기능에 대한 심층 분석
-- `/explain`: 코드나 개념에 대한 설명
-- `/document`: 프로젝트 문서 생성
-- `/improve`: 코드 품질 개선 제안
-
+- `/analyze`: Deep analysis of specific code or features
+- `/explain`: Explanation of code or concepts
+- `/document`: Generate project documentation
+- `/improve`: Code quality improvement suggestions

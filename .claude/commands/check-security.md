@@ -1,171 +1,171 @@
 ---
-argument-hint: "[파일/디렉토리] [--fix] [--severity high|medium|low] [--report]"
-description: "코드의 보안 취약점을 검사하고 개선 사항 제안"
+argument-hint: "[file/directory] [--fix] [--severity high|medium|low] [--report]"
+description: "Scan code for security vulnerabilities and suggest improvements"
 ---
 
-# 보안 검사 - $ARGUMENTS
+# Security Check - $ARGUMENTS
 
-작성한 코드의 보안 취약점을 검사하고 모범 사례를 따르는지 확인합니다.
+Scans your code for security vulnerabilities and verifies adherence to best practices.
 
-$ARGUMENTS가 제공되지 않은 경우, 최근 변경된 파일들을 대상으로 검사합니다.
+If $ARGUMENTS is not provided, recently changed files are scanned automatically.
 
-## 작업 프로세스
+## Task Process
 
-1. **검사 대상 결정**
-   - $ARGUMENTS로 지정된 파일/디렉토리
-   - 미지정 시 최근 변경 파일 자동 탐지
-   - 보안 관련 파일 우선 검사
+1. **Determine Scan Target**
+   - Files/directories specified by $ARGUMENTS
+   - If not specified, recently changed files are auto-detected
+   - Security-related files are prioritized
 
-2. **보안 취약점 스캔**
-   - 민감 정보 노출 검사
-   - 인증/인가 취약점
-   - 입력 검증 부재
-   - 안전하지 않은 데이터 처리
+2. **Security Vulnerability Scan**
+   - Sensitive information exposure
+   - Authentication/authorization vulnerabilities
+   - Missing input validation
+   - Unsafe data handling
 
-3. **모범 사례 검증**
-   - OWASP 가이드라인 준수
-   - 프레임워크별 보안 권장사항
-   - 암호화 및 해싱 방식
+3. **Best Practice Verification**
+   - OWASP guideline compliance
+   - Framework-specific security recommendations
+   - Encryption and hashing methods
 
-4. **결과 보고**
-   - 취약점 수준별 분류
-   - 구체적인 위치 지정
-   - 수정 방안 제시
+4. **Report Results**
+   - Classify vulnerabilities by severity
+   - Specify exact locations
+   - Provide remediation steps
 
-## 옵션 설명
+## Options
 
-- `--fix`: 자동으로 수정 가능한 문제 해결
-- `--severity`: 특정 심각도 이상만 표시
-  - `high`: 중대한 보안 위험
-  - `medium`: 잠재적 위험
-  - `low`: 개선 권장사항
-- `--report`: 상세 보고서 생성
+- `--fix`: Automatically resolve fixable issues
+- `--severity`: Show only issues at or above the specified severity
+  - `high`: Critical security risks
+  - `medium`: Potential risks
+  - `low`: Improvement recommendations
+- `--report`: Generate a detailed report
 
-## 검사 항목
+## Scan Items
 
-### 1. 민감 정보 노출
-- **하드코딩된 시크릿**
-  - API 키, 비밀번호, 토큰
-  - 데이터베이스 연결 문자열
-  - 암호화 키
-- **로깅 취약점**
-  - 민감 데이터 로깅
-  - 스택 트레이스 노출
-- **에러 메시지**
-  - 시스템 정보 노출
-  - 디버그 정보 유출
+### 1. Sensitive Information Exposure
+- **Hardcoded Secrets**
+  - API keys, passwords, tokens
+  - Database connection strings
+  - Encryption keys
+- **Logging Vulnerabilities**
+  - Logging sensitive data
+  - Stack trace exposure
+- **Error Messages**
+  - System information exposure
+  - Debug information leakage
 
-### 2. 인증 및 인가
-- **세션 관리**
-  - 세션 고정 공격
-  - 세션 타임아웃 미설정
-- **접근 제어**
-  - 권한 검증 누락
-  - 불충분한 인증
-- **비밀번호 정책**
-  - 약한 비밀번호 허용
-  - 평문 저장
+### 2. Authentication and Authorization
+- **Session Management**
+  - Session fixation attacks
+  - Missing session timeout
+- **Access Control**
+  - Missing permission checks
+  - Insufficient authentication
+- **Password Policy**
+  - Weak passwords allowed
+  - Plaintext storage
 
-### 3. 입력 검증
-- **인젝션 공격**
-  - SQL 인젝션
+### 3. Input Validation
+- **Injection Attacks**
+  - SQL injection
   - XSS (Cross-Site Scripting)
-  - 명령어 인젝션
-- **경로 조작**
-  - 디렉토리 트래버설
-  - 파일 업로드 취약점
+  - Command injection
+- **Path Manipulation**
+  - Directory traversal
+  - File upload vulnerabilities
 
-### 4. 데이터 보호
-- **암호화**
-  - 약한 암호화 알고리즘
-  - 적절하지 않은 키 관리
-- **전송 보안**
-  - HTTP 사용 (HTTPS 미사용)
-  - 안전하지 않은 쿠키
+### 4. Data Protection
+- **Encryption**
+  - Weak encryption algorithms
+  - Improper key management
+- **Transport Security**
+  - HTTP used (HTTPS not enforced)
+  - Insecure cookies
 
-### 5. 구성 보안
-- **기본 설정**
-  - 디버그 모드 활성화
-  - 불필요한 서비스 노출
-- **CORS 설정**
-  - 과도하게 허용적인 정책
-- **보안 헤더**
-  - 누락된 보안 헤더
+### 5. Configuration Security
+- **Default Settings**
+  - Debug mode enabled
+  - Unnecessary services exposed
+- **CORS Configuration**
+  - Overly permissive policy
+- **Security Headers**
+  - Missing security headers
 
-## 사용 예시
+## Usage Examples
 
-### 전체 프로젝트 검사
+### Scan entire project
 ```
 /check-security
 ```
 
-### 특정 파일 검사
+### Scan a specific file
 ```
 /check-security src/auth/login.js
 ```
 
-### 디렉토리 검사 및 자동 수정
+### Scan a directory and auto-fix
 ```
 /check-security src/ --fix
 ```
 
-### 고위험 취약점만 표시
+### Show only high-severity vulnerabilities
 ```
 /check-security --severity high
 ```
 
-### 상세 보고서 생성
+### Generate a detailed report
 ```
 /check-security --report
 ```
 
-## 출력 형식
+## Output Format
 
 ```
-🔒 보안 검사 결과
+🔒 Security Scan Results
 
-검사 파일: 15개
-발견된 문제: 8개 (High: 2, Medium: 4, Low: 2)
+Files scanned: 15
+Issues found: 8 (High: 2, Medium: 4, Low: 2)
 
-🚨 HIGH: 하드코딩된 API 키
-📍 위치: src/config.js:12
+🚨 HIGH: Hardcoded API key
+📍 Location: src/config.js:12
 ```javascript
-const API_KEY = "sk-1234567890abcdef"; // 취약점
+const API_KEY = "sk-1234567890abcdef"; // vulnerable
 ```
-✅ 수정 방안: 환경 변수 사용
+✅ Fix: Use an environment variable
 ```javascript
 const API_KEY = process.env.API_KEY;
 ```
 
-⚠️ MEDIUM: SQL 인젝션 취약점
-📍 위치: src/database/queries.js:45
+⚠️ MEDIUM: SQL injection vulnerability
+📍 Location: src/database/queries.js:45
 ```javascript
-const query = `SELECT * FROM users WHERE id = ${userId}`; // 취약점
+const query = `SELECT * FROM users WHERE id = ${userId}`; // vulnerable
 ```
-✅ 수정 방안: 파라미터화된 쿼리 사용
+✅ Fix: Use a parameterized query
 ```javascript
 const query = 'SELECT * FROM users WHERE id = ?';
 db.query(query, [userId]);
 ```
 
-[추가 취약점들...]
+[Additional vulnerabilities...]
 
-📊 요약
-- 즉시 수정 필요: 2개
-- 수정 권장: 4개
-- 개선 제안: 2개
+📊 Summary
+- Requires immediate fix: 2
+- Recommended fix: 4
+- Improvement suggestions: 2
 ```
 
-## 자동 수정 가능 항목
+## Auto-fixable Items
 
-- 환경 변수로 이동 가능한 하드코딩된 값
-- 보안 헤더 추가
-- HTTPS 리다이렉션 설정
-- 안전한 쿠키 플래그 설정
+- Hardcoded values that can be moved to environment variables
+- Adding security headers
+- HTTPS redirect configuration
+- Secure cookie flag settings
 
-## 주의사항
+## Notes
 
-- 자동 수정 후 반드시 테스트 필요
-- 일부 수정은 수동 검토 필요
-- 프레임워크별 특수 사항 고려
-- 백업 후 수정 권장
+- Always test after auto-fixing
+- Some fixes require manual review
+- Consider framework-specific nuances
+- Back up before applying fixes

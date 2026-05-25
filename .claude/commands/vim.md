@@ -1,28 +1,28 @@
-# /vim - vim 편집기 명령어 및 단축키 도우미
+# /vim - Vim Editor Commands and Shortcuts Helper
 
-vim 편집기의 모드, 명령어, 단축키에 대한 빠른 참조를 제공합니다.
+Provides a quick reference for vim editor modes, commands, and shortcuts.
 
-## 사용법
-`/vim [질문]` - vim 관련 질문을 하면 간단명료한 답변을 제공합니다.
+## Usage
+`/vim [question]` - Ask any vim-related question and get a clear, concise answer.
 
-## 주요 영역
-- 모드 전환 (Normal, Insert, Visual, Command)
-- 이동 및 네비게이션
-- 편집 명령어 (복사, 붙여넣기, 삭제)
-- 검색 및 바꾸기
-- 파일 조작
-- 설정 및 커스터마이징
+## Key Areas
+- Mode switching (Normal, Insert, Visual, Command)
+- Movement and navigation
+- Editing commands (copy, paste, delete)
+- Search and replace
+- File operations
+- Configuration and customization
 
 ## Configuration Files
-답변 시 다음 파일들을 참조하여 사용자의 커스텀 설정을 고려합니다:
-- `~/.vimrc` - vim 메인 설정 파일
-- `~/.vimrc.after` - 사용자 설정 파일(있는 경우)
+When answering, the following files are referenced to account for your custom settings:
+- `~/.vimrc` - Main vim configuration file
+- `~/.vimrc.after` - User configuration file (if present)
 
-## 답변 스타일
-- 명령어/단축키를 먼저 제시
-- 모드 정보 포함 (필요시)
-- 설정 파일에서 관련 옵션 발견시 함께 설명
-- 커스텀 설정이 없으면 기본값만 제시
-- 사용자가 요청하지 않으면 부연 설명 제외
+## Answer Style
+- Commands/shortcuts presented first
+- Mode information included (when relevant)
+- Relevant options from config files shown when found
+- Default values only when no custom settings exist
+- No extra explanation unless requested
 
-질문 예시: "줄 삭제", "검색하기", "모드 전환", "복사 붙여넣기", "파일 저장"
+Example questions: "delete a line", "search", "switch modes", "copy and paste", "save file"

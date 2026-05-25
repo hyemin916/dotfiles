@@ -1,26 +1,26 @@
-# /tmux - tmux 명령어 및 단축키 도우미
+# /tmux - tmux Commands and Shortcuts Helper
 
-tmux 세션 관리, 창 분할, 단축키에 대한 빠른 참조를 제공합니다.
+Provides a quick reference for tmux session management, window splitting, and shortcuts.
 
-## 사용법
-`/tmux [질문]` - tmux 관련 질문을 하면 간단명료한 답변을 제공합니다.
+## Usage
+`/tmux [question]` - Ask any tmux-related question and get a clear, concise answer.
 
-## 주요 영역
-- 세션 관리 (생성, 연결, 분리)
-- 창(window) 관리
-- 패널(pane) 분할 및 관리
-- 단축키 조합
-- 설정 및 커스터마이징
+## Key Areas
+- Session management (create, attach, detach)
+- Window management
+- Pane splitting and management
+- Key bindings
+- Configuration and customization
 
 ## Configuration Files
-답변 시 다음 파일들을 참조하여 사용자의 커스텀 설정을 고려합니다:
-- `~/.tmux.conf` - tmux 주요 설정 파일
+When answering, the following files are referenced to account for your custom settings:
+- `~/.tmux.conf` - Main tmux configuration file
 - ~/.tmux
 
-## 답변 스타일
-- 설정 파일에서 관련 옵션 발견시 함께 설명
-- 커스텀 설정이 없으면 기본값만 제시
-- 가능하면 명령어/단축키만 제시
-- 사용자의 요청이 없으면 부연 설명 제외
+## Answer Style
+- Relevant options from config files shown when found
+- Default values only when no custom settings exist
+- Commands/shortcuts only when possible
+- No extra explanation unless requested
 
-질문 예시: "새 세션 만들기", "창 분할", "세션 목록", "단축키 변경"
+Example questions: "create a new session", "split window", "list sessions", "change keybindings"

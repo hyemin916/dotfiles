@@ -24,31 +24,31 @@ Analyze the intent and tone of the provided review comment to understand:
 Choose the most appropriate label based on these criteria:
 
 - **praise**: Positive feedback, compliments, acknowledgment of good work
-  - Keywords: "좋다", "잘했다", "훌륭하다", "깔끔하다", "great", "nice", "excellent"
+  - Keywords: "great", "nice", "excellent", "well done", "clean", "love it"
   
 - **suggestion**: Improvement proposals, optional recommendations
-  - Keywords: "~하면 좋겠다", "~는 어떨까요?", "consider", "maybe", "could", "suggest"
+  - Keywords: "consider", "maybe", "could", "suggest", "what about", "how about"
   
 - **issue**: Clear problems, bugs, errors that need fixing
-  - Keywords: "문제", "버그", "오류", "잘못", "틀렸다", "bug", "error", "problem", "broken"
+  - Keywords: "bug", "error", "problem", "broken", "wrong", "incorrect"
   
 - **question**: Seeking clarification or understanding
-  - Keywords: "왜", "어떻게", "이해가 안됨", "why", "how", "what", "clarify", "?"
+  - Keywords: "why", "how", "what", "clarify", "?", "don't understand"
   
 - **nitpick**: Minor style or preference issues
-  - Keywords: "스타일", "들여쓰기", "네이밍", "formatting", "style", "naming", "spacing"
+  - Keywords: "formatting", "style", "naming", "spacing", "indentation"
   
 - **todo**: Must-do items, required changes
-  - Keywords: "해야 함", "필수", "반드시", "must", "need to", "required", "should"
+  - Keywords: "must", "need to", "required", "should", "mandatory"
   
 - **thought**: Ideas, brainstorming, non-actionable insights
-  - Keywords: "생각해보니", "아이디어", "혹시", "idea", "thought", "thinking"
+  - Keywords: "idea", "thought", "thinking", "wondering", "brainstorm"
   
 - **chore**: Simple tasks, administrative changes
-  - Keywords: "주석", "문서", "정리", "comment", "documentation", "cleanup"
+  - Keywords: "comment", "documentation", "cleanup", "tidy"
   
 - **note**: Information sharing, context providing
-  - Keywords: "참고", "알아두면", "FYI", "note", "information", "context"
+  - Keywords: "FYI", "note", "information", "context", "heads up"
 
 ### Step 3: Decoration Decision
 
@@ -77,10 +77,10 @@ Provide the analysis in this structure:
 ```
 ## Analysis
 
-**Original Comment**: [원본 댓글]
+**Original Comment**: [original comment]
 
-**Intent**: [의도 분석]
-**Severity**: [심각도 평가]
+**Intent**: [intent analysis]
+**Severity**: [severity assessment]
 
 ## Recommended Format
 
@@ -92,11 +92,11 @@ Provide the analysis in this structure:
 ```
 
 **Alternative Options**:
-- `<alternative-label>`: [이유]
-- `<alternative-label>`: [이유]
+- `<alternative-label>`: [reason]
+- `<alternative-label>`: [reason]
 
 ## Usage Tips
-- [상황에 맞는 사용 팁]
+- [context-appropriate usage tip]
 ```
 
 ### Step 6: Korean Language Support
@@ -108,33 +108,33 @@ When input is in Korean:
 
 ## Examples
 
-**Input**: "이 함수가 너무 복잡해 보입니다. 더 작은 함수로 나누면 어떨까요?"
+**Input**: "This function looks too complex. How about splitting it into smaller functions?"
 
 **Output**:
 ```
 ## Analysis
 
-**Original Comment**: 이 함수가 너무 복잡해 보입니다. 더 작은 함수로 나누면 어떨까요?
+**Original Comment**: This function looks too complex. How about splitting it into smaller functions?
 
-**Intent**: 함수의 복잡성을 지적하고 리팩토링을 제안
-**Severity**: 중간 (개선 제안이지만 즉시 수정 필요하지 않음)
+**Intent**: Points out function complexity and suggests refactoring
+**Severity**: Medium (improvement suggestion, not requiring immediate fix)
 
 ## Recommended Format
 
 **Primary Option**:
 ```
-suggestion (non-blocking): 함수 복잡도 개선
+suggestion (non-blocking): reduce function complexity
 
-이 함수를 더 작은 단위로 분리하면 가독성과 유지보수성이 향상될 것 같습니다.
+Splitting this function into smaller units would improve readability and maintainability.
 ```
 
 **Alternative Options**:
-- `thought`: 리팩토링에 대한 아이디어 공유
-- `issue (if-minor)`: 복잡성을 문제로 보는 경우
+- `thought`: sharing an idea about refactoring
+- `issue (if-minor)`: if complexity is viewed as a problem
 
 ## Usage Tips
-- 비blocking으로 설정하여 강압적이지 않은 제안으로 전달
-- 구체적인 분리 방법을 제시하면 더 도움이 될 것
+- Set as non-blocking to deliver the suggestion non-forcefully
+- Providing specific ways to split the function would be more helpful
 ```
 
 Now analyze the provided comment: $ARGUMENTS

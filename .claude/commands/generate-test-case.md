@@ -1,35 +1,34 @@
-# 테스트 케이스 생성
-주어진 factor들로부터 모든 가능한 조합의 테스트 케이스를 생성해주세요.
+# Test Case Generation
+Generate all possible test case combinations from the given factors.
 - factor: $1
-- 제약사항: $2
+- constraints: $2
 
-# 처리 규칙:
-1. 모든 factor의 데카르트 곱으로 조합 생성
-2. 제약사항을 분석하여 케이스별 적용 여부 판단
-3. 제약사항에 의해 특정 factor가 무의미해지는 경우, 해당 factor는 무시하고 통합
-4. 실제 비즈니스 시나리오 형태로 케이스 설명을 산문 형식으로 작성
+# Processing Rules:
+1. Generate combinations using the Cartesian product of all factors
+2. Analyze constraints to determine applicability per case
+3. If a factor becomes meaningless due to constraints, ignore and merge it
+4. Write case descriptions in prose form as realistic business scenarios
 
-# 출력 형식:
-- 각 케이스를 "케이스 X: [시나리오를 산문으로 설명]" 형태로 작성
-- 구체적인 수치나 부가 설명은 제외하고 케이스 설명만 작성
-- 총 케이스 수 표시
+# Output Format:
+- Write each case as "Case X: [prose description of the scenario]"
+- Include only the case description, no specific numbers or supplementary details
+- Show the total number of cases
 
-# 예시 입력:
+# Example Input:
 ```
-# factor
-- factor1: 값1, 값2
-- factor2: 값A, 값B
-- factor3: 옵션1, 옵션2
-# 제약사항
-- 특정 조건에서만 factor3가 적용됨
-```
-
-# 예시 출력:
-```
-**케이스 1:** 값1과 값A를 조합하여 옵션1을 적용하는 경우
-**케이스 2:** 값1과 값A를 조합하여 옵션2를 적용하는 경우
-**케이스 3:** 값2와 값B를 조합하는 경우
-
-**총 케이스 수: 3개**
+# factors
+- factor1: value1, value2
+- factor2: valueA, valueB
+- factor3: option1, option2
+# constraints
+- factor3 only applies under certain conditions
 ```
 
+# Example Output:
+```
+**Case 1:** Combining value1 and valueA with option1 applied
+**Case 2:** Combining value1 and valueA with option2 applied
+**Case 3:** Combining value2 and valueB
+
+**Total cases: 3**
+```
